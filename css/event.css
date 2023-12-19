@@ -1,12 +1,11 @@
 *{
     list-style: none;
-    text-decoration: none;
+    text-decoration: none!important;
     box-sizing: border-box;
 }
 
 body{
     background-color: rgba(217, 217, 217, .7);
-    font-family: "calibri";
 }
 
 .mds{
@@ -24,7 +23,7 @@ body{
     margin-right: 10px;
 }
 
-.mds h4{
+.mds h5{
     margin-left: 10px;
 }
 
@@ -33,6 +32,7 @@ body{
     width: 50px;
     position: relative;
     border-radius: 50px;
+    box-shadow: 0px 0px 10px grey;
     background-color: rgba(217, 217, 217, 1);
     cursor: pointer;
 }
@@ -40,11 +40,11 @@ body{
 .mds .btn-mds #div-toggle #toggle{
     position: absolute;
     background-color: #fff;
-    box-shadow: 2px 2px 30px grey;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     left: 0;
+    transition: .3s ease-in-out;
 }
 
 .msg-accueil{
@@ -59,4 +59,8 @@ body{
 .msg-accueil img{
     width: 35rem;
     height: 35rem;
+}
+
+.translate{
+    transform: translate(35px);
 }
