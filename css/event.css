@@ -1,0 +1,62 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(217, 217, 217, .7);
+    font-family: "calibri";
+}
+
+.mds{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.mds a{
+    color: gray;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.mds h4{
+    margin-left: 10px;
+}
+
+.mds .btn-mds #div-toggle{
+    height: 15px;
+    width: 50px;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgba(217, 217, 217, 1);
+    cursor: pointer;
+}
+
+.mds .btn-mds #div-toggle #toggle{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px grey;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: 0;
+}
+
+.msg-accueil{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.msg-accueil img{
+    width: 35rem;
+    height: 35rem;
+}
