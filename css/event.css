@@ -56,6 +56,16 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+@media (max-width: 950px){
+    .msg-accueil{
+        margin-top: 40px;
+    }
+
+    .msg-accueil img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
 
 .msg-accueil img{
     width: 25rem;
