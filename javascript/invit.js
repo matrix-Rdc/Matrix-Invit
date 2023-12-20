@@ -6,6 +6,9 @@ const btnNext = document.querySelector('.btn-next');
 var mds;
 var ctr = 0;
 
+let selectFile = document.querySelector('#upload-img');
+let imgChange = document.querySelector('#img-change');
+
 btnNext.onclick = () => {
 
     ctr++;
@@ -48,5 +51,12 @@ window.onload = () => {
         divToggle.classList.add('bg-sky');
         Toggle.classList.add('translate');
     }
+
+}
+
+selectFile.onchange = () => {
+
+    var imgUrl = URL.createObjectURL(selectFile.files[0]); 
+    imgChange.src = imgUrl;
 
 }
