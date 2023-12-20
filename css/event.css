@@ -56,14 +56,15 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
 @media (max-width: 950px){
     .msg-accueil{
-        margin-top: 40px;
+        margin-top: 35px;
     }
 
     .msg-accueil img{
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
     }
 }
 
