@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(217, 217, 217, .7);
+    background-color: rgba(217, 217, 217, .3);
 }
 
 .mds{
@@ -23,8 +23,9 @@ body{
     margin-right: 10px;
 }
 
-.mds h5{
+.mds h6{
     margin-left: 10px;
+    margin-top: 7px;
 }
 
 .mds .btn-mds #div-toggle{
@@ -57,10 +58,26 @@ body{
 }
 
 .msg-accueil img{
-    width: 35rem;
-    height: 35rem;
+    width: 25rem;
+    height: 25rem;
 }
 
+.btn-next{
+    width: 150px;
+    height: 40px;
+}
+
+/* La classe qui permet au bouton mds de transité */
 .translate{
     transform: translate(35px);
+}
+
+/* La classe qui permet au bouton mds de changé la couleur de fond */
+.bg-sky{
+    background-color: skyblue!important;
+}
+
+.msg-accueil p, .msg-accueil span{
+    font-size: 22px;
+    font-weight: 600;
 }
