@@ -77,6 +77,12 @@ body{
     .container .form-conn input, .container .form-ins input{
         width: 350px;
     }
+
+    .preferences .choix-pref .pref{
+        padding: 5px 10px!important;
+        font-size: 15px!important;
+        font-weight: initial!important;
+    }
 }
 
 .msg-accueil img{
@@ -150,4 +156,30 @@ body{
 
 .container .form-ins form #upload-img{
     display: none;
+}
+
+/*  Préférences */
+
+.preferences{
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.preferences .choix-pref{
+    padding: 20px;
+}
+
+.preferences .choix-pref .pref{
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.pref-choisi{
+    border: 1px solid royalblue!important;
+    color: #fff!important;
+    background-color: royalblue!important;
 }

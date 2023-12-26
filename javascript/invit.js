@@ -9,6 +9,18 @@ var ctr = 0;
 let selectFile = document.querySelector('#upload-img');
 let imgChange = document.querySelector('#img-change');
 
+const prefers = document.querySelectorAll('.pref');
+
+for(let i = 0; i < prefers.length; i++){
+
+    prefers[i].onclick = () => {
+
+        prefers[i].classList.toggle('pref-choisi');
+
+    }
+
+}
+
 btnNext.onclick = () => {
 
     ctr++;
@@ -59,4 +71,4 @@ selectFile.addEventListener('change', function() {
     let imgUrl = URL.createObjectURL(selectFile.files[0]); 
     imgChange.src = imgUrl;
 
-})
+}, false)
