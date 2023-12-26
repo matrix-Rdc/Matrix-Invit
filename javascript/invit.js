@@ -54,9 +54,9 @@ window.onload = () => {
 
 }
 
-selectFile.onchange = () => {
+selectFile.addEventListener('change', function() {
 
-    var imgUrl = URL.createObjectURL(selectFile.files[0]); 
+    let imgUrl = URL.createObjectURL(selectFile.files[0]); 
     imgChange.src = imgUrl;
 
-}
+})

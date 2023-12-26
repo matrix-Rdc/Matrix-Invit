@@ -73,6 +73,10 @@ body{
     .container .form-conn button, .container .form-ins button{
         width: 300px!important;
     }
+
+    .container .form-conn input, .container .form-ins input{
+        width: 350px;
+    }
 }
 
 .msg-accueil img{
