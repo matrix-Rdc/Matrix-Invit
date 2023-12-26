@@ -67,7 +67,11 @@ body{
         height: 15rem;
     }
     .msg-accueil span{
-        font-size: 17px;
+        font-size: 16px!important;
+    }
+
+    .container .form-conn button, .container .form-ins button{
+        width: 300px!important;
     }
 }
 
@@ -100,19 +104,20 @@ body{
 
 
 /* Connexion */
+
 .container{
     min-height: 100vh;
 }
 
 .container .form-conn form{
-    width: 400px;
     border-radius: 10px;
     padding: 30px;
 }
 
 .container .form-conn form input{
-    height: 40px;
+    height: 45px;
     border: 1px solid silver;
+    width: 380px;
 }
 
 .container .form-conn form img{
@@ -123,14 +128,14 @@ body{
 /* inscription */
 
 .container .form-ins form{
-    width: 420px;
     border-radius: 10px;
     padding: 30px;   
 }
 
 .container .form-ins form input{
-    height: 40px;
+    height: 45px;
     border: 1px solid silver;
+    width: 380px;
 }
 
 .container .form-ins form img{
@@ -141,9 +146,4 @@ body{
 
 .container .form-ins form #upload-img{
     display: none;
-}
-
-.container .form-ins form label{
-    font-weight: 600;
-    border-radius: 5px;
 }
