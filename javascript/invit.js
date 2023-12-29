@@ -32,10 +32,10 @@ for(let i = 0; i < prefers.length; i++){
 btnNext.onclick = () => {
 
     ctr++;
-    document.querySelector('#txt-acc').innerText = "Créer des invités";
+    document.querySelector('#txt-acc').innerText = "Créer vos propres évènements en quleques clics, et de les personnaliser selon vos envies.";
 
     if(ctr > 1){
-        document.querySelector('#txt-acc').innerText = "Participer à un événement";
+        document.querySelector('#txt-acc').innerText = "Inviter vos proches à réjoindre vos évènements ou ceux auxquels vous assistez, et de partager vos expériences avec eux.";
         btnNext.innerText = "Se connecter";
     }
     if(ctr > 2){
