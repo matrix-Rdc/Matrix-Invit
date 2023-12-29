@@ -57,10 +57,21 @@ body{
     flex-direction: column;
 }
 
+.preload{
+    height: 100vh;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #fff;
+}
+
+.preload img{
+    width: 15em;
+    height: 15em;
+}
+
 @media (max-width: 950px){
-    .msg-accueil{
-        margin-top: 35px;
-    }
 
     .msg-accueil img{
         width: 15rem;

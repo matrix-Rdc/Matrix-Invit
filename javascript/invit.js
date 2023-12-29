@@ -10,6 +10,14 @@ let selectFile = document.querySelector('#upload-img');
 let imgChange = document.querySelector('#img-change');
 
 const prefers = document.querySelectorAll('.pref');
+const preload = document.querySelector('.preload');
+
+
+setTimeout(() => {
+
+    preload.style.display ="none";
+
+}, 3000);
 
 for(let i = 0; i < prefers.length; i++){
 
