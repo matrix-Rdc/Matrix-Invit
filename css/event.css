@@ -6,7 +6,7 @@
 
 body{
     background-color: rgba(217, 217, 217, .3);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .mds{
@@ -70,7 +70,7 @@ body{
 }
 
 .preload{
-    max-height: 100vh;
+    min-height: 100vh;
     z-index: 30;
     position: fixed;
     top: 0;
@@ -129,9 +129,9 @@ body{
 .container .form-conn form button, .container .form-ins form button {
     height: 45px;
     border-radius: 50px;
-    background-color: #fff;
-    font-weight: 600;
-    color: dodgerblue;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    font-weight: 700;
+    color: #fff;
     width: 100%;
     border: none;
 }
@@ -147,7 +147,7 @@ body{
 /* Connexion */
 
 .container{
-    max-height: 100vh;
+    min-height: 100vh;
 }
 .container form{
     padding: 40px;
@@ -160,7 +160,7 @@ body{
 }
 
 .container .form-conn form h2{
-    color: #fff;
+    color: #Fff;
 }
 /* inscription */
 
@@ -196,6 +196,7 @@ body{
     border: 1px solid gray;
     padding: 10px 15px;
     font-size: 17px;
+    color: gray;
     font-weight: 600;
 }
 
