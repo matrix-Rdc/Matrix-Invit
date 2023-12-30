@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color: rgba(217, 217, 217, .3);
-    /* overflow: hidden; */
+    background-color: rgba(217, 217, 217, .5)!important;
 }
 
 .mds{
@@ -112,6 +111,7 @@ body{
     background-color: dodgerblue;
     color: #fff;
     font-weight: 600;
+    border: none;
 }
 
 /* La classe qui permet au bouton mds de transité */
@@ -141,7 +141,7 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 7px;
-    border: 2px solid #fff;
+    border: 1px solid gray;
 }
 
 /* Connexion */
@@ -151,7 +151,7 @@ body{
 }
 .container form{
     padding: 40px;
-    background-color: dodgerblue;
+    background-color: #fff;
 }
 
 .container .form-conn form img{
@@ -159,9 +159,6 @@ body{
     height: 12rem;
 }
 
-.container .form-conn form h2{
-    color: #Fff;
-}
 /* inscription */
 
 .container .form-ins form{
@@ -170,11 +167,17 @@ body{
 }
 
 .container .form-ins form img{
-    width: 15rem;
-    height: 15rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
 }
 
+.container .form-ins form label{
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+}
 .container .form-ins form #upload-img{
     display: none;
 }
@@ -196,12 +199,26 @@ body{
     border: 1px solid gray;
     padding: 10px 15px;
     font-size: 17px;
-    color: gray;
+    color: #000;
     font-weight: 600;
 }
 
 .pref-choisi{
-    border: 1px solid dodgerblue!important;
+    border: 1px solid #ffa908!important;
     color: #fff!important;
-    background-color: dodgerblue!important;
+    background-color: #ffa908!important;
+}
+
+.btnPref{
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    height: 45px;
+}
+
+.btnPref a{
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
 }
