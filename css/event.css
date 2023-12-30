@@ -50,24 +50,22 @@ body{
 
 .msg-accueil{
     width: 100%;
+    position: relative;
     min-height: 100vh;
     background-image: url('../images/img-acc.jpg');
     background-position: center;
+    backdrop-filter: blur(5px);
     background-size: cover;
+    padding: 0 10px;
     background-repeat: no-repeat;
 }
 
 .msg-accueil div{
-    width: 50%;
-    background-color: rgba(0, 0, 0, .3);
     flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    backdrop-filter: blur(1px);
-}
-
-.msg-accueil div h2{
-    color: dodgerblue;
+    position: absolute;
+    bottom: 0;
+    border-radius: 35px 35px 0 0;
+    background-color: #fff;
 }
 
 .preload{
@@ -80,8 +78,8 @@ body{
 }
 
 .preload img{
-    width: 15em;
-    height: 15em;
+    width: 13em;
+    height: 13em;
 }
 
 @media (max-width: 950px){
@@ -95,14 +93,14 @@ body{
         font-size: 16px!important;
     }
 
-    .container .form-conn button, .container .form-ins button{
-        width: 300px!important;
-    }
-
     .preferences .choix-pref .pref{
         padding: 5px 10px!important;
         font-size: 15px!important;
         font-weight: initial!important;
+    }
+    .container form{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -130,10 +128,19 @@ body{
 .container .form-conn form button, .container .form-ins form button {
     height: 45px;
     border-radius: 50px;
-    background-color: dodgerblue;
+    background-color: #fff;
     font-weight: 600;
-    color: #fff;
+    color: dodgerblue;
+    width: 100%;
     border: none;
+}
+
+.container .form-conn form input, .container .form-ins form input{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid #fff;
 }
 
 /* Connexion */
@@ -141,32 +148,24 @@ body{
 .container{
     min-height: 100vh;
 }
-
-.container .form-conn form{
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.container .form-conn form input{
-    height: 45px;
-    border: 1px solid silver;
+.container form{
+    padding: 40px;
+    background-color: dodgerblue;
 }
 
 .container .form-conn form img{
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
 }
 
+.container .form-conn form h2{
+    color: #fff;
+}
 /* inscription */
 
 .container .form-ins form{
     border-radius: 10px;
     padding: 30px;   
-}
-
-.container .form-ins form input{
-    height: 45px;
-    border: 1px solid silver;
 }
 
 .container .form-ins form img{

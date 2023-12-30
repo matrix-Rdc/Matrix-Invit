@@ -17,7 +17,7 @@ setTimeout(() => {
 
     preload.style.display ="none";
 
-}, 3000);
+}, 5000);
 
 for(let i = 0; i < prefers.length; i++){
 
@@ -32,7 +32,7 @@ for(let i = 0; i < prefers.length; i++){
 btnNext.onclick = () => {
 
     ctr++;
-    document.querySelector('#txt-acc').innerText = "Créer vos propres évènements en quleques clics, et de les personnaliser selon vos envies.";
+    document.querySelector('#txt-acc').innerText = 'Créer vos propres évènements en quleques clics, et de les personnaliser selon vos envies.';
     document.querySelector('.msg-accueil').style.backgroundImage = 'url(\'../images/images (3).jpg\')';
 
     if(ctr > 1){
