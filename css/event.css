@@ -66,6 +66,10 @@ body{
     backdrop-filter: blur(1px);
 }
 
+.msg-accueil div h2{
+    color: dodgerblue;
+}
+
 .preload{
     min-height: 100vh;
     z-index: 30;
@@ -95,10 +99,6 @@ body{
         width: 300px!important;
     }
 
-    .container .form-conn input, .container .form-ins input{
-        width: 350px;
-    }
-
     .preferences .choix-pref .pref{
         padding: 5px 10px!important;
         font-size: 15px!important;
@@ -112,6 +112,7 @@ body{
     border-radius: 50px;
     background-color: dodgerblue;
     color: #fff;
+    font-weight: 600;
 }
 
 /* La classe qui permet au bouton mds de transité */
@@ -126,6 +127,14 @@ body{
 
 /* Fin page accueil ! Début page connexion et inscription */
 
+.container .form-conn form button, .container .form-ins form button {
+    height: 45px;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+}
 
 /* Connexion */
 
@@ -141,7 +150,6 @@ body{
 .container .form-conn form input{
     height: 45px;
     border: 1px solid silver;
-    width: 380px;
 }
 
 .container .form-conn form img{
@@ -159,7 +167,6 @@ body{
 .container .form-ins form input{
     height: 45px;
     border: 1px solid silver;
-    width: 380px;
 }
 
 .container .form-ins form img{
@@ -193,7 +200,7 @@ body{
 }
 
 .pref-choisi{
-    border: 1px solid royalblue!important;
+    border: 1px solid dodgerblue!important;
     color: #fff!important;
-    background-color: royalblue!important;
+    background-color: dodgerblue!important;
 }

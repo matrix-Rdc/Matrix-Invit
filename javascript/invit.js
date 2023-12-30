@@ -33,10 +33,12 @@ btnNext.onclick = () => {
 
     ctr++;
     document.querySelector('#txt-acc').innerText = "Créer vos propres évènements en quleques clics, et de les personnaliser selon vos envies.";
+    document.querySelector('.msg-accueil').style.backgroundImage = 'url(\'../images/images (3).jpg\')';
 
     if(ctr > 1){
         document.querySelector('#txt-acc').innerText = "Inviter vos proches à réjoindre vos évènements ou ceux auxquels vous assistez, et de partager vos expériences avec eux.";
         btnNext.innerText = "Se connecter";
+        document.querySelector('.msg-accueil').style.backgroundImage = 'url(\'../images/images (2).jpg\')';
     }
     if(ctr > 2){
         document.querySelector('.link-conn').setAttribute("href", "login.html");
