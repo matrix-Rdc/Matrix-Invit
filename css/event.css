@@ -69,7 +69,7 @@ body{
 }
 
 .preload{
-    min-height: 100vh;
+    max-height: 100vh;
     z-index: 30;
     position: fixed;
     top: 0;
@@ -146,7 +146,7 @@ body{
 /* Connexion */
 
 .container{
-    min-height: 100vh;
+    max-height: 100vh;
 }
 .container form{
     padding: 40px;
