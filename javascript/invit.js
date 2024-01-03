@@ -81,4 +81,4 @@ selectFile.addEventListener('change', function() {
     let imgUrl = URL.createObjectURL(selectFile.files[0]); 
     imgChange.src = imgUrl;
 
-}, false)
+});
