@@ -112,6 +112,22 @@ body{
         width: 100%!important;
         height: 45px;
     }
+    .newEvent{
+        display: none;
+    }
+    .menu .profil span{
+        display: none;
+    }
+    .menu{
+        padding: 5px;
+    }
+    .menu nav ul li a span{
+        display: none!important;
+    }
+    .menu nav ul li a{
+        font-size: 25px;
+        padding: 15px;
+    }
 }
 
 .btn-next{
@@ -244,7 +260,23 @@ body{
 #btnCreatEvent{
     bottom: 20px;
     right: 20px;
-    background-color: #FA6E61;
+    background-color: dodgerblue;
     border-radius: 50%;
     padding: 5px;
+    z-index: 100;
+}
+
+.menu{
+    justify-content: space-between;
+    top: 0;
+    padding: 10px;
+}
+
+.menu .profil img{
+    width: 70px;
+    height: 70px;
+}
+
+.active{
+    font-weight: 700!important;
 }
