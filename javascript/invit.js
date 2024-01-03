@@ -12,6 +12,8 @@ let imgChange = document.querySelector('#img-change');
 const prefers = document.querySelectorAll('.pref');
 const preload = document.querySelector('.preload');
 
+let view = true;
+
 
 setTimeout(() => {
 
@@ -81,3 +83,21 @@ selectFile.addEventListener('change', function() {
     imgChange.src = imgUrl;
 
 })
+
+
+function changeView(){
+
+    if(view){
+        document.querySelector('.inputPass').setAttribute("type", "text");
+        view = false;
+        document.querySelector('#oeil').classList.remove('bi-eye-slash-fill');
+        document.querySelector('#oeil').classList.add('bi-eye-fill');
+    }
+    else{
+        document.querySelector('.inputPass').setAttribute("type", "password");
+        view = true;
+        document.querySelector('#oeil').classList.remove('bi-eye-fill');
+        document.querySelector('#oeil').classList.add('bi-eye-slash-fill');
+    }
+
+}

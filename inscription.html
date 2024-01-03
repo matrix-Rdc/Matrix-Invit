@@ -15,12 +15,12 @@
         <div class="form-ins">
             <form class="text-center" action="preference.html" method="GET">
     
-                <h2 class="mb-2">Créer un compte invit</h2>
+                <h2 class="mb-4">Créer un compte invit</h2>
 
-                <img class="mb-4" src="images/users.png" alt="logo/invit" id="img-change"><br>
+                <img class="mb-2" src="images/users.png" alt="logo/invit" id="img-change"><br>
 
                 <input type="file" id="upload-img" accept="image/*">
-                <label for="upload-img" class="mb-3 rounded">Choisir une photo <i class="bi bi-camera-fill"></i></label>
+                <label for="upload-img" class="mb-5 rounded">Choisir une photo <i class="bi bi-camera-fill"></i></label>
 
                 <div class="champs mb-3 d-flex align-items-center justify-content-center">
                     <span><i class="bi bi-person"></i></span>
@@ -31,8 +31,8 @@
                     <input type="tel" placeholder="téléphone" name="téléphone" required>
                 </div>
                 <div class="champs mb-4 d-flex align-items-center justify-content-center">
-                    <span></span>
-                    <input type="password" placeholder="mot de passe" name="pass" required>
+                    <span><i id="oeil" onclick="changeView()" class="bi bi-eye-slash-fill"></i></span>
+                    <input type="password" placeholder="mot de passe" name="pass" class="inputPass" required>
                 </div>
 
                 <button type="submit" class="font-semibold col-md-12 mb-2">

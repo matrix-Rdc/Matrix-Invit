@@ -149,9 +149,13 @@ body{
     border-bottom: 1px solid grey;
 }
 
+.container .form-conn form .champs span, .container .form-ins form .champs span{
+    width: 12%;
+}
+
 .container .form-conn form .champs input, .container .form-ins form input{
     outline: none;
-    width: 100%;
+    width: 88%;
     padding: 8px 10px;
     border-radius: 7px;
     border:none;
@@ -175,20 +179,20 @@ body{
 
 .container .form-ins form{
     border-radius: 10px;
-    padding: 30px;   
 }
 
 .container .form-ins form img{
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
 .container .form-ins form label{
     background: linear-gradient(to left top,#FA6E61, #FDD832);
     color: #fff;
-    padding: 10px;
-    font-weight: 600;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 500;
 }
 .container .form-ins form #upload-img{
     display: none;
