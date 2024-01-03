@@ -34,10 +34,12 @@ for(let i = 0; i < prefers.length; i++){
 btnNext.onclick = () => {
 
     ctr++;
-    document.querySelector('#txt-acc').innerHTML = `<p class=\"col-md-12\"><span style=\"color: dodgerblue;\" class=\"font-bold\">Créer vos propres évènements en quleques clics</span><br> et de les personnaliser selon vos envies.</p>`;
+    document.querySelector('#txt-acc').innerText = `et de les personnaliser selon vos envies.`;
+    document.querySelector('#txt-acc-titre').innerText = `Créer vos propres évènements en quleques clics`;
 
     if(ctr > 1){
-        document.querySelector('#txt-acc').innerHTML = `<p class=\"col-md-12\"><span style=\"color: dodgerblue;\" class=\"font-bold\">Inviter vos proches à réjoindre vos évènements</span><br>ou ceux auxquels vous assistez, et de partager vos expériences avec eux.</p>`;
+        document.querySelector('#txt-acc').innertext = `ou ceux auxquels vous assistez, et de partager vos expériences avec eux`;
+        document.querySelector('#txt-acc-titre').innerText = `Inviter vos proches à réjoindre vos évènements`;
         btnNext.innerText = "Se connecter";
 
     }
