@@ -145,15 +145,17 @@ body{
     width: 100%;
     border: none;
 }
+.container .form-conn form .champs, .container .form-ins form .champs{
+    border-bottom: 1px solid grey;
+}
 
-.container .form-conn form input, .container .form-ins form input{
+.container .form-conn form .champs input, .container .form-ins form input{
     outline: none;
     width: 100%;
     padding: 8px 10px;
     border-radius: 7px;
-    border: 1px solid gray;
+    border:none;
 }
-
 /* Connexion */
 
 .container{
@@ -231,4 +233,14 @@ body{
     color: #fff;
     font-weight: 600;
     width: 100%;
+}
+
+/* tableau de bord */
+
+#btnCreatEvent{
+    bottom: 20px;
+    right: 20px;
+    background-color: #FA6E61;
+    border-radius: 50%;
+    padding: 5px;
 }

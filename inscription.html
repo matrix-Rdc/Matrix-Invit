@@ -12,7 +12,7 @@
 <body>
     
     <div class="container d-flex align-items-center justify-content-center w-100">
-        <div class="form-ins d-flex align-items-center justify-content-center w-100">
+        <div class="form-ins">
             <form class="text-center" action="preference.html" method="GET">
     
                 <h2 class="mb-2">Créer un compte invit</h2>
@@ -22,9 +22,18 @@
                 <input type="file" id="upload-img" accept="image/*">
                 <label for="upload-img" class="mb-3 rounded">Choisir une photo <i class="bi bi-camera-fill"></i></label>
 
-                <input type="text" placeholder="nom utilisateur" class="mb-3 col-md-8" name="user" required><br>
-                <input type="tel" placeholder="téléphone" class="mb-3" name="téléphone" required><br>
-                <input type="password" placeholder="mot de passe" class="mb-4" name="pass" required>
+                <div class="champs mb-3 d-flex align-items-center justify-content-center">
+                    <span><i class="bi bi-person"></i></span>
+                    <input type="text" placeholder="nom utilisateur" name="user" required>
+                </div>
+                <div class="champs mb-3 d-flex align-items-center justify-content-center">
+                    <span>+243</span>
+                    <input type="tel" placeholder="téléphone" name="téléphone" required>
+                </div>
+                <div class="champs mb-4 d-flex align-items-center justify-content-center">
+                    <span></span>
+                    <input type="password" placeholder="mot de passe" name="pass" required>
+                </div>
 
                 <button type="submit" class="font-semibold col-md-12 mb-2">
                     S'inscrire
