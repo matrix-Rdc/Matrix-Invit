@@ -32,13 +32,12 @@ for(let i = 0; i < prefers.length; i++){
 btnNext.onclick = () => {
 
     ctr++;
-    document.querySelector('#txt-acc').innerHTML = `<span style=\"color: dodgerblue;\" class=\"font-bold\">Créer vos propres évènements en quleques clics</span><br> et de les personnaliser selon vos envies.`;
-    document.querySelector('.msg-accueil').style.backgroundImage = 'url(\'../images/images (3).jpg\')';
+    document.querySelector('#txt-acc').innerHTML = `<p class=\"col-md-12\"><span style=\"color: dodgerblue;\" class=\"font-bold\">Créer vos propres évènements en quleques clics</span><br> et de les personnaliser selon vos envies.</p>`;
 
     if(ctr > 1){
-        document.querySelector('#txt-acc').innerHTML = `<span style=\"color: dodgerblue;\" class=\"font-bold\">Inviter vos proches à réjoindre vos évènements</span><br>ou ceux auxquels vous assistez, et de partager vos expériences avec eux.`;
+        document.querySelector('#txt-acc').innerHTML = `<p class=\"col-md-12\"><span style=\"color: dodgerblue;\" class=\"font-bold\">Inviter vos proches à réjoindre vos évènements</span><br>ou ceux auxquels vous assistez, et de partager vos expériences avec eux.</p>`;
         btnNext.innerText = "Se connecter";
-        document.querySelector('.msg-accueil').style.backgroundImage = 'url(\'../images/images (2).jpg\')';
+
     }
     if(ctr > 2){
         document.querySelector('.link-conn').setAttribute("href", "login.html");
@@ -81,4 +80,4 @@ selectFile.addEventListener('change', function() {
     let imgUrl = URL.createObjectURL(selectFile.files[0]); 
     imgChange.src = imgUrl;
 
-});
+})
