@@ -13,7 +13,7 @@
 
     <div class="container d-flex align-items-center justify-content-center w-100">
 
-        <div class="form-event p-2">
+        <div class="form-event">
             <form class="rounded" action="" method="get">
 
                 <h1 class="mb-2 font-bold text-3xl"><i class="bi bi-plus-circle"></i> Ajouter un évènement</h1>
@@ -74,9 +74,14 @@
 
                 <h4 class="mb-3"><span class="font-semibold">Définissez la visibilité de votre évènement !</span> <br> Un évènement privé ne sera vu que par les personnes que vous aurez invitées. <br> Contrairement à un évènement publique qui sera vu par tout le monde, <br> et tout le monde pourra y partiiper.</h4>
 
-                <div class="">
+                <div class="mb-4">
                     <input type="radio" name="visibilite" id="prive" checked><label for="prive" class=""> Privé</label>
                     <input type="radio" name="visibilite" id="public"><label for="public" class=""> Publique</label>
+                </div>
+
+                <div class="flex justify-between w-100">
+                    <button type="reset" class="annuler rounded font-semibold">Annuler</button>
+                    <button type="submit" class="ajouter rounded font-semibold">Ajouter <i class="bi bi-plus-circle"></i></button>
                 </div>
 
             </form>

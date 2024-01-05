@@ -308,3 +308,18 @@ body{
 .container .form-event form .dateHeure div input{
     border: 1px solid gray;
 }
+
+.container .form-event form button{
+    width: 48%;
+}
+
+.container .form-event form .annuler{
+    background-color: red;
+    color: #fff;
+    height: 40px;
+}
+.container .form-event form .ajouter{
+    background-color: dodgerblue;
+    color: #fff;
+    height: 40px;
+}
