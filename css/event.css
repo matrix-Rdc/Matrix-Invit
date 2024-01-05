@@ -280,3 +280,31 @@ body{
 .active{
     font-weight: 700!important;
 }
+
+/*Event formulaire*/
+
+.container .form-event form .champsEvent{
+    border: 1px solid gray;
+    height: 55px;
+}
+.container .form-event form .champsEvent span{
+    left: 10px;
+    top: 15px;
+}
+.container .form-event form .champsEvent input{
+    background-color: transparent;
+    width: 100%;
+    top: 15px;
+    outline: none;
+    left: 10px;
+}
+.container .form-event form .dateHeure{
+    width: 100%;
+}
+.container .form-event form .dateHeure div{
+    width: 50%;
+    padding: 2px;
+}
+.container .form-event form .dateHeure div input{
+    border: 1px solid gray;
+}
