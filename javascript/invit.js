@@ -10,9 +10,33 @@ const places = document.querySelectorAll('.place');
 
 const selectMode = document.querySelector('#selectMode');
 
+setTimeout(() => {
+
+    preload.style.display ="none";
+
+}, 5000);
+
+btnNext.onclick = () => {
+
+    ctr++;
+    document.querySelector('#txt-acc').innerText = `et de les personnaliser selon vos envies.`;
+    document.querySelector('#txt-acc-titre').innerText = `Créer vos propres évènements en quleques clics`;
+
+    if(ctr > 1){
+        document.querySelector('#txt-acc').innertext = `ou ceux auxquels vous assistez, et de partager vos expériences avec eux`;
+        document.querySelector('#txt-acc-titre').innerText = `Inviter vos proches à réjoindre vos évènements`;
+        btnNext.innerText = "Se connecter";
+
+    }
+    if(ctr > 2){
+        document.querySelector('.link-conn').setAttribute("href", "login.html");
+    }
+
+}
+
 selectMode.onblur = () =>{
 
-    if(selectMode.value == "presence"){
+    if(selectMode.value === "ligne"){
         document.querySelector('.zoneAdresse').disabled = true;
     }
     else{
@@ -62,36 +86,12 @@ function overBlur(){
     })
 }
 
-setTimeout(() => {
-
-    preload.style.display ="none";
-
-}, 5000);
-
 for(let i = 0; i < prefers.length; i++){
 
     prefers[i].onclick = () => {
 
         prefers[i].classList.toggle('pref-choisi');
 
-    }
-
-}
-
-btnNext.onclick = () => {
-
-    ctr++;
-    document.querySelector('#txt-acc').innerText = `et de les personnaliser selon vos envies.`;
-    document.querySelector('#txt-acc-titre').innerText = `Créer vos propres évènements en quleques clics`;
-
-    if(ctr > 1){
-        document.querySelector('#txt-acc').innertext = `ou ceux auxquels vous assistez, et de partager vos expériences avec eux`;
-        document.querySelector('#txt-acc-titre').innerText = `Inviter vos proches à réjoindre vos évènements`;
-        btnNext.innerText = "Se connecter";
-
-    }
-    if(ctr > 2){
-        document.querySelector('.link-conn').setAttribute("href", "login.html");
     }
 
 }
