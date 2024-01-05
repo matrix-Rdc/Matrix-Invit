@@ -1,19 +1,66 @@
-const divToggle = document.querySelector('#div-toggle');
-const Toggle = document.querySelector('#toggle');
-
 const btnNext = document.querySelector('.btn-next');
-
-var mds;
 var ctr = 0;
-
-let selectFile = document.querySelector('#upload-img');
-let imgChange = document.querySelector('#img-change');
 
 const prefers = document.querySelectorAll('.pref');
 const preload = document.querySelector('.preload');
-
 let view = true;
 
+const zones = document.querySelectorAll('.zones');
+const places = document.querySelectorAll('.place');
+
+const selectMode = document.querySelector('#selectMode');
+
+selectMode.onblur = () =>{
+
+    if(selectMode.value == "presence"){
+        document.querySelector('.zoneAdresse').disabled = true;
+    }
+    else{
+        document.querySelector('.zoneAdresse').disabled = false;
+    }
+}
+
+function overFocus(){
+
+    zones.forEach(zone => {
+        zone.onfocus = () => {
+            let index; 
+            index = zone.getAttribute('data-anim');
+            for(let i = 0; i < places.length; i++){
+                if(places[i].getAttribute('data-anim') === index){
+                    places[i].classList.add('over');
+                }
+                else{
+                    places[i].classList.remove('over');
+                }
+            }
+        }
+    
+    })
+}
+
+function overBlur(){
+    zones.forEach(zone => {
+        zone.onblur = () => {
+            let index; 
+            index = zone.getAttribute('data-anim');
+            if(zone.value.length > 0){
+                for(let i = 0; i < places.length; i++){
+                    if(places[i].getAttribute('data-anim') === index){
+                        places[i].classList.add('over');
+                    }
+                }
+            }
+            else{
+                for(let i = 0; i < places.length; i++){
+                    if(places[i].getAttribute('data-anim') === index){
+                        places[i].classList.remove('over');
+                    }
+                }
+            }
+        }
+    })
+}
 
 setTimeout(() => {
 
@@ -49,44 +96,6 @@ btnNext.onclick = () => {
 
 }
 
-divToggle.onclick = () => {
-
-    divToggle.classList.toggle('bg-sky');
-    Toggle.classList.toggle('translate');
-    if(Toggle.classList.contains('translate')){
-        document.body.style.backgroundColor = '#082032';
-        document.body.style.color = "#fff";
-        localStorage.setItem('mds', true);
-    }
-    else{
-        document.body.style.backgroundColor = '#fff';
-        document.body.style.color = "#000";
-        localStorage.removeItem('mds');
-    }
-
-}
-
-window.onload = () => {
-
-    mds = localStorage.getItem('mds');
-
-    if(mds){
-        document.body.style.backgroundColor = '#082032';
-        document.body.style.color = "#fff";
-        divToggle.classList.add('bg-sky');
-        Toggle.classList.add('translate');
-    }
-
-}
-
-selectFile.addEventListener('change', function() {
-
-    let imgUrl = URL.createObjectURL(selectFile.files[0]); 
-    imgChange.src = imgUrl;
-
-})
-
-
 function changeView(){
 
     if(view){
@@ -103,3 +112,4 @@ function changeView(){
     }
 
 }
+

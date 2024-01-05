@@ -8,44 +8,11 @@ body{
     background-color: rgba(217, 217, 217, .5)!important;
 }
 
-.mds{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    align-items: center;
-    display: flex;
-}
-
-.mds a{
-    color: gray;
-    font-weight: 600;
-    font-size: 17px;
-    margin-right: 10px;
-}
-
-.mds h6{
-    margin-left: 10px;
-    margin-top: 7px;
-}
-
-.mds .btn-mds #div-toggle{
-    height: 15px;
-    width: 50px;
-    position: relative;
-    border-radius: 50px;
-    box-shadow: 0px 0px 10px grey;
-    background-color: rgba(217, 217, 217, 1);
-    cursor: pointer;
-}
-
-.mds .btn-mds #div-toggle #toggle{
-    position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    left: 0;
-    transition: .3s ease-in-out;
+.over{
+    transition: .2s ease-in-out;
+    font-size: 10px;
+    top: -1px!important;
+    color: dodgerblue;
 }
 
 .msg-accueil{
@@ -293,7 +260,7 @@ body{
 }
 .container .form-event form .champsEvent input{
     background-color: transparent;
-    width: 100%;
+    width: 90%;
     top: 15px;
     outline: none;
     left: 10px;

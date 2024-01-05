@@ -14,14 +14,14 @@
     <div class="container d-flex align-items-center justify-content-center w-100">
 
         <div class="form-event">
-            <form class="rounded" action="" method="get">
+            <form action="invites.html" method="get">
 
                 <h1 class="mb-2 font-bold text-3xl"><i class="bi bi-plus-circle"></i> Ajouter un évènement</h1>
                 <h2 class="mb-5">Créer un évènemet de votre choix et invité des personnes qui vous sont chères !</h2>
 
                 <div class="relative d-flex champsEvent mb-3">
-                    <span class="absolute">Titre de l'évènement</span>
-                    <input class="absolute" type="text" name="nEvent" required>
+                    <span data-anim ="1" class="absolute place">Titre de l'évènement</span>
+                    <input data-anim ="1" onblur="overBlur()" onfocus="overFocus()" class="absolute zones" type="text" name="nEvent" required>
                 </div>
 
                 <div class="relative d-flex champsEvent mb-3">
@@ -49,25 +49,25 @@
                     </div>
                 </div> 
                 <div class="d-flex champsEvent mb-3">
-                    <select name="" id="" class="form-control">
+                    <select name="mode" id="selectMode" class="form-control">
+                        <option value="presence">En presentiel</option>
                         <option value="ligne">En ligne</option>
-                        <option value="preence">En présentiel</option>
                     </select>
                 </div>
                 <div class="relative d-flex champsEvent mb-5">
-                    <span class="absolute">Adresse</span>
-                    <input class="absolute" type="text" name="lieuEvent" required>
+                    <span data-anim="2" class="absolute place ">Adresse</span>
+                    <input onfocus="overFocus()" data-anim="2" onblur="overBlur()" class="absolute zones zoneAdresse" type="text" name="lieuEvent" required>
                 </div>
        
                 <h3 class="mb-3 text-2xl font-semibold">Autres Informations</h3>
 
                 <div class="flex items-center dateHeure mb-4">
                     <div class="date">
-                        <label class="font-semibold" for="date">Nombre des places :</label><br>
+                        <label class="font-semibold" for="date">Nombre places :</label><br>
                         <input type="number" class="form-control" required name="place" placeholder="300">
                     </div>
                     <div class="Heure">
-                        <label class="font-semibold" for="date">nombre des tables :</label><br>
+                        <label class="font-semibold" for="date">nombre tables :</label><br>
                         <input type="number" class="form-control" required name="table" placeholder="30">
                     </div>
                 </div> 
@@ -75,9 +75,10 @@
                 <h4 class="mb-3"><span class="font-semibold">Définissez la visibilité de votre évènement !</span> <br> Un évènement privé ne sera vu que par les personnes que vous aurez invitées. <br> Contrairement à un évènement publique qui sera vu par tout le monde, <br> et tout le monde pourra y partiiper.</h4>
 
                 <div class="mb-4">
-                    <input type="radio" name="visibilite" id="prive" checked><label for="prive" class=""> Privé</label>
-                    <input type="radio" name="visibilite" id="public"><label for="public" class=""> Publique</label>
+                    <input type="radio" name="visibilite" id="prive" value="prive" checked><label for="prive" class=""> Privé</label>
+                    <input type="radio" name="visibilite" id="public" value="publique"><label for="public" class=""> Publique</label>
                 </div>
+
 
                 <div class="flex justify-between w-100">
                     <button type="reset" class="annuler rounded font-semibold">Annuler</button>
