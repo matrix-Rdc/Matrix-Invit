@@ -9,10 +9,25 @@ const zones = document.querySelectorAll('.zones');
 const places = document.querySelectorAll('.place');
 
 const selectMode = document.querySelector('#selectMode');
+let btnTable = document.querySelector('.checkTable');
+
+if(btnTable.checked){
+    localStorage.setItem('check', true);
+}
+
+selectMode.onchange = () =>{
+
+    if(selectMode.value === "ligne"){
+        document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
+    }
+    else{
+        document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
+    }
+}
 
 setTimeout(() => {
 
-    preload.style.display ="none";
+    preload.style.display = 'none';
 
 }, 5000);
 
@@ -32,16 +47,6 @@ btnNext.onclick = () => {
         document.querySelector('.link-conn').setAttribute("href", "login.html");
     }
 
-}
-
-selectMode.onblur = () =>{
-
-    if(selectMode.value === "ligne"){
-        document.querySelector('.zoneAdresse').disabled = true;
-    }
-    else{
-        document.querySelector('.zoneAdresse').disabled = false;
-    }
 }
 
 function overFocus(){

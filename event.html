@@ -30,12 +30,6 @@
                     </select>
                 </div>
 
-                <div class="relative d-flex champsEvent mb-5">
-                    <select name="selectCat" id="" class="form-control">
-                        <option value="type">Catégorie</option>
-                    </select>
-                </div>
-
                 <h3 class="mb-3 text-2xl font-semibold">Lieu et Date</h3>
 
                 <div class="flex items-center dateHeure mb-3">
@@ -55,30 +49,26 @@
                     </select>
                 </div>
                 <div class="relative d-flex champsEvent mb-5">
-                    <span data-anim="2" class="absolute place ">Adresse</span>
-                    <input onfocus="overFocus()" data-anim="2" onblur="overBlur()" class="absolute zones zoneAdresse" type="text" name="lieuEvent" required>
+                    <span data-anim="2" class="absolute place zoneAdresse">Adresse de l'évènement</span>
+                    <input onfocus="overFocus()" data-anim="2" onblur="overBlur()" class="absolute zones" type="text" name="lieuEvent" required>
                 </div>
        
                 <h3 class="mb-3 text-2xl font-semibold">Autres Informations</h3>
 
-                <div class="flex items-center dateHeure mb-4">
-                    <div class="date">
-                        <label class="font-semibold" for="date">Nombre places :</label><br>
-                        <input type="number" class="form-control" required name="place" placeholder="300">
-                    </div>
-                    <div class="Heure">
-                        <label class="font-semibold" for="date">nombre tables :</label><br>
-                        <input type="number" class="form-control" required name="table" placeholder="30">
-                    </div>
-                </div> 
-
                 <h4 class="mb-3"><span class="font-semibold">Définissez la visibilité de votre évènement !</span> <br> Un évènement privé ne sera vu que par les personnes que vous aurez invitées. <br> Contrairement à un évènement publique qui sera vu par tout le monde, <br> et tout le monde pourra y partiiper.</h4>
 
-                <div class="mb-4">
-                    <input type="radio" name="visibilite" id="prive" value="prive" checked><label for="prive" class=""> Privé</label>
-                    <input type="radio" name="visibilite" id="public" value="publique"><label for="public" class=""> Publique</label>
+                <div class="mb-4 row">
+                    <div class="priv col flex items-center">
+                        <input type="radio" name="visibilite" id="prive" value="prive" checked><label for="prive" class=""> Privé</label>
+                    </div>
+                    <div class="pub col flex items-center">
+                        <input type="radio" name="visibilite" id="public" value="publique"><label for="public" class=""> Publique</label>
+                    </div>
                 </div>
 
+                <div class="mb-4 flex items-center">
+                    <input type="checkbox" class="checkTable" id="btnTable"><label for="btnTable">Cocher si votre évènement aura des tables.</label>
+                </div>
 
                 <div class="flex justify-between w-100">
                     <button type="reset" class="annuler font-semibold">Annuler <i class="bi bi-x-circle"></i></button>
