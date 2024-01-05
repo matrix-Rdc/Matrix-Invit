@@ -11,6 +11,12 @@ const places = document.querySelectorAll('.place');
 const selectMode = document.querySelector('#selectMode');
 let btnTable = document.querySelector('.checkTable');
 
+setTimeout(() => {
+
+    preload.style.display = "none";
+
+}, 5000);
+
 if(btnTable.checked){
     localStorage.setItem('check', true);
 }
@@ -24,12 +30,6 @@ selectMode.onchange = () =>{
         document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
     }
 }
-
-setTimeout(() => {
-
-    preload.style.display = 'none';
-
-}, 5000);
 
 btnNext.onclick = () => {
 
