@@ -17,20 +17,6 @@ setTimeout(() => {
 
 }, 5000);
 
-if(btnTable.checked){
-    localStorage.setItem('check', true);
-}
-
-selectMode.onchange = () =>{
-
-    if(selectMode.value === "ligne"){
-        document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
-    }
-    else{
-        document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
-    }
-}
-
 btnNext.onclick = () => {
 
     ctr++;
@@ -47,6 +33,20 @@ btnNext.onclick = () => {
         document.querySelector('.link-conn').setAttribute("href", "login.html");
     }
 
+}
+
+if(btnTable.checked){
+    localStorage.setItem('check', true);
+}
+
+selectMode.onchange = () =>{
+
+    if(selectMode.value === "ligne"){
+        document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
+    }
+    else{
+        document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
+    }
 }
 
 function overFocus(){
