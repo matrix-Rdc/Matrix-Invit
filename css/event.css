@@ -276,17 +276,16 @@ body{
     border: 1px solid gray;
 }
 
-.container .form-event form button{
+.container .form-event form button, .container .form-invites form button{
     width: 48%;
+    border-radius: 50px;
+    color: #fff;
+    height: 50px;
 }
 
-.container .form-event form .annuler{
+.container .form-event form .annuler, .container .form-invites form .annuler{
     background-color: red;
-    color: #fff;
-    height: 40px;
 }
-.container .form-event form .ajouter{
+.container .form-event form .ajouter, .container .form-invites form .ajouter{
     background-color: dodgerblue;
-    color: #fff;
-    height: 40px;
 }

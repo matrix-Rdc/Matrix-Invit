@@ -7,22 +7,43 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.PNG">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <title>Formulaire</title>
+    <title>Ajouter des invités</title>
 </head>
 <body>
 
     <div class="container d-flex align-items-center justify-content-center w-100">
 
         <div class="form-invites">
-            <form action="#" method="get">
+            <form class="rounded" action="#" method="get">
 
                 <h1 class="mb-2 font-bold text-3xl"><i class="bi bi-plus-circle"></i> Ajouter des invités à votre évènement</h1>
-                <h2 class="mb-5">Créer un évènemet de votre choix et invité des personnes qui vous sont chères !</h2>
+                <h2 class="mb-5">Pour donner de la valeur à votre évènement, inviter des personnes pour le rendre encore plus intéressant</h2>
 
+                <p class="mb-2 font-semibold">Remplissez les informations pour chaque invité avant d'envoyer </p>
+                <div class="row gap-2 mb-3">
+                    <select name="" id="" class="col form-control">
+                        <option value="catInvit">Catégorie invité</option>
+                    </select>
+                    <select name="" id="" class="col form-control">
+                        <option value="table">Numéro table</option>
+                        <option value="table1">1</option>
+                        <option value="table2">2</option>
+                        <option value="table3">3</option>
+                    </select>
+                </div>
+
+                <div class="row gap-2 mb-3">
+                    <input type="text" name="nInvite" placeholder="Nom de l'invite" class="form-control col">
+                    <input type="text" name="prenInvite" placeholder="Prenom de l'invite" class="form-control col">
+                </div>
+
+                <div class="row mb-5">
+                    <input type="text" class="col form-control" placeholder="Mail" name="mail">
+                </div>
 
                 <div class="flex justify-between w-100">
-                    <button type="reset" class="annuler rounded font-semibold">Annuler</button>
-                    <button type="submit" class="ajouter rounded font-semibold">Ajouter <i class="bi bi-plus-circle"></i></button>
+                    <button type="reset" class="annuler font-semibold">Annuler <i class="bi bi-x-circle"></i></button>
+                    <button type="submit" class="ajouter font-semibold">Envoyer <i class="bi bi-send"></i></button>
                 </div>
 
             </form>
