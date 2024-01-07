@@ -52,6 +52,23 @@ body{
     height: 12rem;
 }
 
+/* Navbar */
+
+.menu{
+    padding: 0 100px;
+    height: 70px;
+}
+
+.menu nav{
+    margin-top: 11px;
+}
+
+.menu .user img{
+    width: 2rem;
+    margin-left: 5px;
+    height: 2rem;
+}
+
 /* Accueil */
 
 .msg-accueil{
@@ -196,26 +213,16 @@ body{
 #btnCreatEvent{
     bottom: 20px;
     right: 20px;
-    background-color: dodgerblue;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
     border-radius: 50%;
     padding: 5px;
     z-index: 100;
 }
 
-.menu{
-    justify-content: space-between;
-    top: 0;
-    padding: 10px;
-}
-
-.menu .profil img{
-    width: 70px;
-    height: 70px;
-}
-
 .active{
     font-weight: 700!important;
 }
+/* Fin tableau de bord */
 
 /*Event formulaire*/
 
@@ -318,10 +325,7 @@ body{
         display: none;
     }
     .menu{
-        padding: 5px;
-    }
-    .menu nav ul li a span{
-        display: none!important;
+        padding: 0;
     }
     .menu nav ul li a{
         font-size: 25px;
@@ -329,5 +333,33 @@ body{
     }
     .nomPlaces .remplir{
         padding: 20px 20px;
+    }
+    .menu nav{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: #fff;
+        padding: 0;
+        height: 60px;
+        margin-top: initial;
+    }
+    .menu nav ul{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu nav ul li{
+        padding: 0;
+    }
+    .menu nav ul li a{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .menu nav ul li a span{
+        font-size: 14px;
+    }
+    .menu nav ul li a i{
+        font-size: 22px;
     }
 }
