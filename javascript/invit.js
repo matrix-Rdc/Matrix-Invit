@@ -6,20 +6,32 @@ const prefers = document.querySelectorAll('.pref');
 const preload = document.querySelector('.preload');
 let view = true;
 
-let checkTable = document.querySelector('.checkTable');
-
 const zone = document.querySelector('.zone');
 const place = document.querySelector('.place');
+
+const sans = document.querySelector('{sans');
+
+function continuerSans(){
+    document.querySelector('#btnSuivant').disabled =  false;
+    document.querySelector('#btnEnreg').disabled = true;
+    document.querySelector('#nameTable').disabled = true;
+
+    document.querySelector('#btnEnreg').style.cursor ='not-allowed';
+    document.querySelector('#nameTable').style.cursor ='not-allowed';
+    document.querySelector('#btnSuivant').style.cursor =  'pointer';
+}
+
+function dispNone(){
+    document.querySelector('.nomPlaces').style.display = 'none';
+}
 
 function selectMode(){
 
     if(selectmode.value === "ligne"){
         document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
-        checkTable.style.display = 'none';
     }
     else{
         document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
-        checkTable.style.display = 'block';
     }
 }
 
@@ -77,4 +89,3 @@ function changeView(){
     }
 
 }
-

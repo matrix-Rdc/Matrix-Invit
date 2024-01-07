@@ -11,6 +11,26 @@
 </head>
 <body>
 
+    <div class="nomPlaces fixed flex items-center justify-center">
+        <div class="overlay"></div>
+        <div class="remplir bg-white absolute rounded">
+            <h1 class="text-3xl mb-3 font-bold"><i class="bi bi-plus-circle"></i> Ajouter des noms à vos tables pour faciliter vos invités !</h1>
+            <h4 class="mb-5">Pour rendre vos invités la tâche facile, nommer chacune de vos. cela facilitera l'invité pour prendre un place </h4>
+            <div class="mb-5">
+                <form class="row mb-3 gap-2" action="" method="get">
+                    <input type="text" name="categerie" placeholder="Nom de la table" class="form-control col" id="nameTable">
+                    <button name="enregistrer" class="col col-md-4 font-semibold rounded" id="btnEnreg">Enregistrer <i class="bi bi-save-fill"></i></button>
+                </form>
+                <div class="p-2 mb-3">
+                    <p><span id="nbr">0</span> Table nommée</p>
+                </div>
+                <button class="btn btn-link font-bold" id="sans" onclick="continuerSans()">Continuer sans nommé une table</button>
+            </div>
+
+            <button style="cursor: not-allowed;" class="col-md-12 font-semibold" id="btnSuivant" onclick="dispNone()" disabled>Continuer</button>
+        </div>
+    </div>
+
     <div class="container d-flex align-items-center justify-content-center w-100">
 
         <div class="form-invites">
@@ -25,30 +45,29 @@
                         <option value="catInvit">Catégorie invité</option>
                     </select>
                     <select name="" id="" class="col form-control">
-                        <option value="table">Numéro table</option>
-                        <option value="table1">1</option>
-                        <option value="table2">2</option>
-                        <option value="table3">3</option>
+                        <option value="table">Noms tablees</option>
                     </select>
                 </div>
 
-                <div class="row gap-2 mb-3">
-                    <input type="text" name="nInvite" placeholder="Nom de l'invite" class="form-control col">
-                    <input type="text" name="prenInvite" placeholder="Prenom de l'invite" class="form-control col">
+                <div class="row mb-3">
+                    <input type="text" name="nInvite" placeholder="Nom complet de l'invite" class="form-control col">
                 </div>
 
                 <div class="row mb-5">
-                    <input type="text" class="col form-control" placeholder="Mail" name="mail">
+                    <input type="tel" class="col form-control" placeholder="Numero de l'invite" name="mail">
                 </div>
 
-                <div class="flex justify-between w-100">
+                <div class="flex justify-between w-100 mb-5">
                     <button type="reset" class="annuler font-semibold">Annuler <i class="bi bi-x-circle"></i></button>
                     <button type="submit" class="ajouter font-semibold">Envoyer <i class="bi bi-send"></i></button>
                 </div>
 
+                <div class="nbrInvitation p-2">
+                    <p><span id="nbr">0</span> Invitation envoyé</p>
+                </div>
+
             </form>
         </div>
-
     </div>
     
 

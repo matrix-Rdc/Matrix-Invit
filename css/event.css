@@ -19,6 +19,26 @@ body{
     color: #000;
 }
 
+.nomPlaces{
+    width: 100%;
+    height: 100vh;
+    z-index: 40;
+}
+
+.nomPlaces .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(1px);
+    z-index: -1;
+}
+.nomPlaces .remplir{
+    z-index: 1;
+    padding: 40px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* Accueil */
 
 .msg-accueil{
@@ -224,6 +244,17 @@ body{
 }
 .container .form-event form .ajouter, .container .form-invites form .ajouter{
     background-color: dodgerblue;
+}
+
+#btnEnreg, #btnSuivant{
+    color: #fff;
+    background-color: dodgerblue;
+}
+
+#btnSuivant{
+    height: 45px;
+    border-radius: 50px;
+    width: 100%;
 }
 
 /* Media Screen */
