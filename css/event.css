@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(217, 217, 217, .5)!important;
+    background-color: rgba(217, 217, 217, .2)!important;
 }
 
 .over{
@@ -14,6 +14,12 @@ body{
     top: -1px!important;
     color: dodgerblue;
 }
+
+.placeHol::placeholder{
+    color: #000;
+}
+
+/* Accueil */
 
 .msg-accueil{
     width: 100%;
@@ -35,68 +41,6 @@ body{
     background-color: #fff;
 }
 
-.preload{
-    min-height: 100vh;
-    z-index: 30;
-    position: fixed;
-    top: 0;
-    display: flex;
-    background-color: #fff;
-}
-
-.preload img{
-    width: 13em;
-    height: 13em;
-}
-
-@media (max-width: 950px){
-
-    .msg-accueil img{
-        width: 15rem;
-        height: 15rem;
-    }
-    
-    .msg-accueil span{
-        font-size: 16px!important;
-    }
-
-    .preferences .choix-pref .pref{
-        padding: 5px 10px!important;
-        font-size: 15px!important;
-        font-weight: initial!important;
-    }
-    .container form{
-        width: 100%;
-        height: 100%;
-    }
-    .container form{
-        padding: 40px 20px!important;
-    }
-    .btnPref{
-        background: linear-gradient(to left top,#FA6E61, #FDD832);
-        border: none;
-        border-radius: 50px;
-        width: 100%!important;
-        height: 45px;
-    }
-    .newEvent{
-        display: none;
-    }
-    .menu .profil span{
-        display: none;
-    }
-    .menu{
-        padding: 5px;
-    }
-    .menu nav ul li a span{
-        display: none!important;
-    }
-    .menu nav ul li a{
-        font-size: 25px;
-        padding: 15px;
-    }
-}
-
 .btn-next{
     width: 150px;
     height: 45px;
@@ -107,15 +51,7 @@ body{
     border: none;
 }
 
-/* La classe qui permet au bouton mds de transité */
-.translate{
-    transform: translate(35px);
-}
-
-/* La classe qui permet au bouton mds de changé la couleur de fond */
-.bg-sky{
-    background-color: skyblue!important;
-}
+/* Fin d'accueil */
 
 /* Fin page accueil ! Début page connexion et inscription */
 
@@ -288,4 +224,54 @@ body{
 }
 .container .form-event form .ajouter, .container .form-invites form .ajouter{
     background-color: dodgerblue;
+}
+
+/* Media Screen */
+
+@media (max-width: 950px){
+
+    .msg-accueil img{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .msg-accueil span{
+        font-size: 16px!important;
+    }
+
+    .preferences .choix-pref .pref{
+        padding: 5px 10px!important;
+        font-size: 15px!important;
+        font-weight: initial!important;
+    }
+    .container form{
+        width: 100%;
+        height: 100%;
+    }
+    .container form{
+        padding: 40px 20px!important;
+    }
+    .btnPref{
+        background: linear-gradient(to left top,#FA6E61, #FDD832);
+        border: none;
+        border-radius: 50px;
+        width: 100%!important;
+        height: 45px;
+    }
+    .newEvent{
+        display: none;
+    }
+    .menu .profil span{
+        display: none;
+    }
+    .menu{
+        padding: 5px;
+    }
+    .menu nav ul li a span{
+        display: none!important;
+    }
+    .menu nav ul li a{
+        font-size: 25px;
+        padding: 15px;
+    }
 }

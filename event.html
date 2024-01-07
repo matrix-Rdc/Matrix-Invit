@@ -20,8 +20,7 @@
                 <h2 class="mb-5">Créer un évènemet de votre choix, et invité des personnes qui vous sont chèrs !</h2>
 
                 <div class="relative d-flex champsEvent mb-3">
-                    <span data-anim ="1" class="absolute place">Titre de l'évènement</span>
-                    <input data-anim ="1" onblur="overBlur()" onfocus="overFocus()" class="absolute zones" type="text" name="nEvent" required>
+                    <input placeholder="Titre de l'évènement" class="absolute placeHol" type="text" name="nEvent" required>
                 </div>
 
                 <div class="relative d-flex champsEvent mb-3">
@@ -43,14 +42,14 @@
                     </div>
                 </div> 
                 <div class="d-flex champsEvent mb-3">
-                    <select name="mode" id="selectMode" class="form-control">
+                    <select name="mode" id="selectmode" onchange="selectMode()" class="form-control">
                         <option value="presence">En presentiel</option>
                         <option value="ligne">En ligne</option>
                     </select>
                 </div>
                 <div class="relative d-flex champsEvent mb-5">
-                    <span data-anim="2" class="absolute place zoneAdresse">Adresse de l'évènement</span>
-                    <input onfocus="overFocus()" data-anim="2" onblur="overBlur()" class="absolute zones" type="text" name="lieuEvent" required>
+                    <span class="absolute place zoneAdresse">Adresse de l'évènement</span>
+                    <input onfocus="overFocus()" onblur="overBlur()" class="absolute zone" type="text" name="lieuEvent" required>
                 </div>
        
                 <h3 class="mb-3 text-2xl font-semibold">Autres Informations</h3>
@@ -66,8 +65,8 @@
                     </div>
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <input type="checkbox" class="checkTable" id="btnTable"><label for="btnTable">Cocher si votre évènement aura des tables.</label>
+                <div class="mb-4 flex items-center checkTable">
+                    <input type="checkbox" id="btnCheckTable"><label for="btnTable">Cocher si votre évènement aura des tables.</label>
                 </div>
 
                 <div class="flex justify-between w-100">

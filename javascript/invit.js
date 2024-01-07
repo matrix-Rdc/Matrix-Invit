@@ -1,15 +1,41 @@
-const btnNext = document.querySelector('.btn-next');
 var ctr = 0;
+const btnNext = document.querySelector('.btn-next');
+const selectmode = document.querySelector('#selectmode');
 
 const prefers = document.querySelectorAll('.pref');
 const preload = document.querySelector('.preload');
 let view = true;
 
-const zones = document.querySelectorAll('.zones');
-const places = document.querySelectorAll('.place');
+let checkTable = document.querySelector('.checkTable');
 
-const selectMode = document.querySelector('#selectMode');
-let btnTable = document.querySelector('.checkTable');
+const zone = document.querySelector('.zone');
+const place = document.querySelector('.place');
+
+function selectMode(){
+
+    if(selectmode.value === "ligne"){
+        document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
+        checkTable.style.display = 'none';
+    }
+    else{
+        document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
+        checkTable.style.display = 'block';
+    }
+}
+
+function overFocus(){
+    place.classList.add('over');
+
+}
+function overBlur(){
+  
+            if(zone.value.length > 0){
+                place.classList.add('over');
+            }
+            else{
+                place.classList.remove('over');
+            }
+}
 
 setTimeout(() => {
 
@@ -17,7 +43,7 @@ setTimeout(() => {
 
 }, 5000);
 
-btnNext.onclick = () => {
+function changeMsg(){
 
     ctr++;
     document.querySelector('#txt-acc').innerText = `et de les personnaliser selon vos envies.`;
@@ -31,72 +57,6 @@ btnNext.onclick = () => {
     }
     if(ctr > 2){
         document.querySelector('.link-conn').setAttribute("href", "login.html");
-    }
-
-}
-
-if(btnTable.checked){
-    localStorage.setItem('check', true);
-}
-
-selectMode.onchange = () =>{
-
-    if(selectMode.value === "ligne"){
-        document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
-    }
-    else{
-        document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
-    }
-}
-
-function overFocus(){
-
-    zones.forEach(zone => {
-        zone.onfocus = () => {
-            let index; 
-            index = zone.getAttribute('data-anim');
-            for(let i = 0; i < places.length; i++){
-                if(places[i].getAttribute('data-anim') === index){
-                    places[i].classList.add('over');
-                }
-                else{
-                    places[i].classList.remove('over');
-                }
-            }
-        }
-    
-    })
-}
-
-function overBlur(){
-    zones.forEach(zone => {
-        zone.onblur = () => {
-            let index; 
-            index = zone.getAttribute('data-anim');
-            if(zone.value.length > 0){
-                for(let i = 0; i < places.length; i++){
-                    if(places[i].getAttribute('data-anim') === index){
-                        places[i].classList.add('over');
-                    }
-                }
-            }
-            else{
-                for(let i = 0; i < places.length; i++){
-                    if(places[i].getAttribute('data-anim') === index){
-                        places[i].classList.remove('over');
-                    }
-                }
-            }
-        }
-    })
-}
-
-for(let i = 0; i < prefers.length; i++){
-
-    prefers[i].onclick = () => {
-
-        prefers[i].classList.toggle('pref-choisi');
-
     }
 
 }
