@@ -5,14 +5,14 @@
 }
 
 body{
-    background-color: rgba(217, 217, 217, .2)!important;
+    background-color: rgba(217, 217, 217, .4)!important;
 }
 
 .over{
     transition: .2s ease-in-out;
     font-size: 10px;
     top: -1px!important;
-    color: dodgerblue;
+    color: #FA6E61;
 }
 
 .placeHol::placeholder{
@@ -248,26 +248,35 @@ body{
 .container .form-event form button, .container .form-invites form button{
     width: 48%;
     border-radius: 50px;
-    color: #fff;
     height: 50px;
 }
 
-.container .form-event form .annuler, .container .form-invites form .annuler{
-    background-color: red;
+.container .form-event form .annuler, .container .form-invites form .annuler, #sans{
+    background-color: #fff;
+    border: 1px solid #FA6E61;
+    color: #FA6E61;
 }
 .container .form-event form .ajouter, .container .form-invites form .ajouter{
-    background-color: dodgerblue;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    color: #fff;
 }
 
 #btnEnreg, #btnSuivant{
     color: #fff;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
 }
 
 #btnSuivant{
     height: 45px;
     border-radius: 50px;
     width: 100%;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+}
+
+#sans{
+    border-radius: 50px;
+    height: 45px;
 }
 
 /* Media Screen */
@@ -317,5 +326,8 @@ body{
     .menu nav ul li a{
         font-size: 25px;
         padding: 15px;
+    }
+    .nomPlaces .remplir{
+        padding: 20px 20px;
     }
 }
