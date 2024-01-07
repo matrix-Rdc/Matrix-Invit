@@ -9,7 +9,11 @@ let view = true;
 const zone = document.querySelector('.zone');
 const place = document.querySelector('.place');
 
-const sans = document.querySelector('{sans');
+setTimeout(() => {
+
+    preload.style.display = 'none';
+
+}, 5000);
 
 function continuerSans(){
     document.querySelector('#btnSuivant').disabled =  false;
@@ -28,12 +32,32 @@ function dispNone(){
 function selectMode(){
 
     if(selectmode.value === "ligne"){
+        localStorage.setItem('ligne', true);
         document.querySelector('.zoneAdresse').innerText = 'Lien de l\'évènement';
     }
     else{
+        localStorage.clear();
         document.querySelector('.zoneAdresse').innerText = 'Adresse de l`\'évènement';
     }
 }
+
+(function(){
+
+    window.onload = () =>{
+        let ligne;
+        ligne = localStorage.getItem('ligne');
+
+        if(ligne){
+            document.querySelector('.nomPlaces').style.display ='none';
+            document.querySelector('#selectTable').disabled = true;
+        }
+        else{
+            document.querySelector('.nomPlaces').style.display ='flex';
+            document.querySelector('#selectTable').disabled = false;
+        }
+    }
+
+})();
 
 function overFocus(){
     place.classList.add('over');
@@ -48,12 +72,6 @@ function overBlur(){
                 place.classList.remove('over');
             }
 }
-
-setTimeout(() => {
-
-    preload.style.display = "none";
-
-}, 5000);
 
 function changeMsg(){
 

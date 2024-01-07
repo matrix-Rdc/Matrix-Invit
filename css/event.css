@@ -39,6 +39,19 @@ body{
     margin-right: 10px;
 }
 
+.preload{
+    display: flex;
+    z-index: 3000;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.preload img{
+    width: 12rem;
+    height: 12rem;
+}
+
 /* Accueil */
 
 .msg-accueil{
