@@ -306,10 +306,24 @@ body{
 /* Infos */
 
 .infos{
-    top: 210px;
-    right: 120px;
-    width: 22%;
+    top: 100px;
+    right: 70px;
+    width: 27%;
 }
+
+.infos div button{
+    width: 48%;
+    padding: 8px;
+}
+
+.infos div .ajouter{
+    border: 1px solid grey;
+}
+
+.infos div .mod{
+    background-color: #FA6E61;
+}
+
 
 /* Fin infos */
 
