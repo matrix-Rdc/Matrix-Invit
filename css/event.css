@@ -383,20 +383,20 @@ body{
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .menu nav ul li{
-        padding: 0;
+        padding: 0!important;
     }
     .menu nav ul li a{
         display: flex!important;
         flex-direction: column!important;
     }
     .menu nav ul li a span{
-        font-size: 13px;
+        font-size: 12px;
     }
     .menu nav ul li a i{
-        font-size: 22px;
+        font-size: 20px;
     }
     .search{
         top: 130px;
