@@ -418,10 +418,10 @@ body{
         flex-direction: column!important;
     }
     .menu nav ul li a span{
-        font-size: 12px;
+        font-size: 13px;
     }
     .menu nav ul li a i{
-        font-size: 20px;
+        font-size: 21px;
     }
     .search{
         top: 130px;
@@ -432,5 +432,63 @@ body{
         top: 210px;
         left: 0;
         right: 0;
+    }
+}
+
+@media (max-width: 375px){
+    .menu nav ul li a span{
+        font-size: 11px;
+    }
+    .menu nav ul li a i{
+        font-size: 18px;
+    }
+    .menu nav{
+        height: 50px;
+    }
+    .search{
+        top: 120px;
+    }
+    .accueil{
+        top: 190px;
+    }
+    .search div{
+        background-color: rgba(217, 217, 217, .4);
+        width: 95%;
+        height: 40px;
+    }
+    
+    .search div input{
+        height: 80%;
+        padding-left: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 300px){
+    .menu nav ul li a span{
+        font-size: 7px;
+    }
+    .menu nav ul li a i{
+        font-size: 14px;
+    }
+    .menu nav{
+        height: 40px;
+    }
+    .search{
+        top: 110px;
+    }
+    .accueil{
+        top: 170px;
+    }
+    .search div{
+        background-color: rgba(217, 217, 217, .4);
+        width: 95%;
+        height: 40px;
+    }
+    
+    .search div input{
+        height: 80%;
+        padding-left: 10px;
+        width: 90%;
     }
 }
