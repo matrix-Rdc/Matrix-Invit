@@ -1,4 +1,5 @@
 var ctr = 0;
+let ctrlike = 0;
 const btnNext = document.querySelector('.btn-next');
 const selectmode = document.querySelector('#selectmode');
 
@@ -8,6 +9,27 @@ let view = true;
 
 const zone = document.querySelector('.zone');
 const place = document.querySelector('.place');
+
+const interesse = document.querySelector('.interesse');
+let ctrLike = document.querySelector('.ctr');
+
+function userInteresse(){
+
+    interesse.addEventListener('click', () =>{
+
+        interesse.classList.toggle('inter');
+
+        if(interesse.classList.contains('inter')){
+            document.querySelector('.heart').classList.add('bi-heart-fill');
+            document.querySelector('.heart').classList.remove('bi-heart');
+        }
+        else{
+            document.querySelector('.heart').classList.remove('bi-heart-fill');
+            document.querySelector('.heart').classList.add('bi-heart');
+        }
+    })
+
+}
 
 setTimeout(() => {
 

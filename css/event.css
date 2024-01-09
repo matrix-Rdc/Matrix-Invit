@@ -8,6 +8,13 @@ body{
     background-color: rgba(217, 217, 217, .4)!important;
 }
 
+.inter{
+    color: #fff;
+    background-color: #FA6E61;
+    border: none!important;
+    transition: .1s ease-in-out;
+}
+
 .over{
     transition: .2s ease-in-out;
     font-size: 10px;
@@ -257,6 +264,24 @@ body{
     left: 35%;
     top: 200px;
 }
+
+/* Evenement */
+
+.evenements .avis .interesse{
+    border: 1px solid gray;
+    width: 50%;
+}
+
+.evenements .avis .participe{
+    width: 50%;
+}
+
+.evenements .avis .participe button{
+    background-color: #FA6E61;
+    padding: 9px 0;
+}
+
+/* Fin Event*/
 
 /* Fin tableau de bord */
 
