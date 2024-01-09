@@ -80,6 +80,7 @@ body{
     padding: 0 100px;
     height: 70px;
     top: 0;
+    width: 100%;
     z-index: 50;
 }
 
@@ -392,7 +393,7 @@ body{
         flex-direction: column!important;
     }
     .menu nav ul li a span{
-        font-size: 14px;
+        font-size: 13px;
     }
     .menu nav ul li a i{
         font-size: 22px;
