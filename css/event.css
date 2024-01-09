@@ -262,7 +262,7 @@ body{
 .accueil{
     right: 35%;
     left: 35%;
-    top: 200px;
+    top: 180px;
 }
 
 /* Evenement */
@@ -282,6 +282,37 @@ body{
 }
 
 /* Fin Event*/
+
+/* Profil */
+
+.profil{
+    top: 210px;
+    left: 120px;
+    width: 22%;
+    overflow: hidden;
+}
+
+.profil .information button{
+    background-color: #FA6E61;
+    padding: 8px;
+}
+
+.profil .prefer{
+    background-color: rgba(217, 217, 217, .4);
+}
+
+/*Fin Profil*/
+
+/* Infos */
+
+.infos{
+    top: 210px;
+    right: 120px;
+    width: 22%;
+}
+
+/* Fin infos */
+
 
 /* Fin tableau de bord */
 
@@ -432,6 +463,9 @@ body{
         top: 210px;
         left: 0;
         right: 0;
+    }
+    .profil, .infos{
+        display: none!important;
     }
 }
 
