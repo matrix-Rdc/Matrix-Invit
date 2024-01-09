@@ -15,6 +15,28 @@ body{
     color: #FA6E61;
 }
 
+.search{
+    top: 70px;
+    left: 35%;
+    right: 35%;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    z-index: 40;
+}
+
+.search div{
+    background-color: rgba(217, 217, 217, .4);
+    width: 91%;
+    height: 50px;
+}
+
+.search div input{
+    background-color: transparent;
+    height: 100%;
+    outline: none;
+    padding-left: 20px;
+    width: 90%;
+}
+
 .placeHol::placeholder{
     color: #000;
 }
@@ -57,10 +79,16 @@ body{
 .menu{
     padding: 0 100px;
     height: 70px;
+    top: 0;
+    z-index: 50;
+}
+
+.menu a h2{
+    color: #FA6E61;
 }
 
 .menu nav{
-    margin-top: 11px;
+    margin-top: 7px;
 }
 
 .menu .user img{
@@ -95,7 +123,7 @@ body{
     width: 150px;
     height: 45px;
     border-radius: 50px;
-    background-color: dodgerblue;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
     color: #fff;
     font-weight: 600;
     border: none;
@@ -222,6 +250,13 @@ body{
 .active{
     font-weight: 700!important;
 }
+
+.accueil{
+    right: 35%;
+    left: 35%;
+    top: 200px;
+}
+
 /* Fin tableau de bord */
 
 /*Event formulaire*/
@@ -288,7 +323,7 @@ body{
 
 /* Media Screen */
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
 
     .msg-accueil img{
         width: 15rem;
@@ -361,5 +396,15 @@ body{
     }
     .menu nav ul li a i{
         font-size: 22px;
+    }
+    .search{
+        top: 130px;
+        left: 0;
+        right: 0;
+    }
+    .accueil{
+        top: 210px;
+        left: 0;
+        right: 0;
     }
 }
