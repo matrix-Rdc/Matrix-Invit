@@ -289,6 +289,7 @@ body{
     top: 210px;
     left: 120px;
     width: 22%;
+    display: flex;
     overflow: hidden;
 }
 
@@ -309,6 +310,7 @@ body{
     top: 100px;
     right: 70px;
     width: 27%;
+    display: block;
 }
 
 .infos div button{
@@ -479,7 +481,7 @@ body{
         right: 0;
     }
     .profil, .infos{
-        display: none!important;
+        display: none;
     }
 }
 
