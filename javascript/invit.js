@@ -37,16 +37,6 @@ setTimeout(() => {
 
 }, 5000);
 
-function continuerSans(){
-    document.querySelector('#btnSuivant').disabled =  false;
-    document.querySelector('#btnEnreg').disabled = true;
-    document.querySelector('#nameTable').disabled = true;
-
-    document.querySelector('#btnEnreg').style.cursor ='not-allowed';
-    document.querySelector('#nameTable').style.cursor ='not-allowed';
-    document.querySelector('#btnSuivant').style.cursor =  'pointer';
-}
-
 function dispNone(){
     document.querySelector('.nomPlaces').style.display = 'none';
 }
@@ -130,7 +120,3 @@ function changeView(){
 
 }
 
-function profile(){
-
-    document.querySelector('.profil').style.display = 'flex';
-}
