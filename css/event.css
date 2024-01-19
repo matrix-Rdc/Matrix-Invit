@@ -291,6 +291,7 @@ body{
     width: 22%;
     display: flex;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .profil .information button{
@@ -482,6 +483,14 @@ body{
     }
     .profil, .infos{
         display: none;
+    }
+    .profil{
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: none;
+        z-index: 100;
+        bottom: 0;
     }
 }
 

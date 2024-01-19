@@ -129,3 +129,8 @@ function changeView(){
     }
 
 }
+
+function profile(){
+
+    document.querySelector('.profil').style.display = 'flex';
+}
