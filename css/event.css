@@ -199,7 +199,7 @@ body{
     font-size: 13px;
     font-weight: 500;
 }
-.container .form-ins form #upload-img{
+.container .form-ins form #upload-img, .monProfil #upload-img{
     display: none;
 }
 
@@ -546,14 +546,19 @@ body{
         padding-left: 10px;
         width: 90%;
     }
+    .monProfil{
+        left: 0;
+        right: 0;
+        top: 120px;
+    }
 }
 
 @media (max-width: 300px){
     .menu nav ul li a span{
-        font-size: 7px;
+        font-size: 6px;
     }
     .menu nav ul li a i{
-        font-size: 14px;
+        font-size: 13px;
     }
     .menu nav{
         height: 40px;
@@ -574,5 +579,10 @@ body{
         height: 80%;
         padding-left: 10px;
         width: 90%;
+    }
+    .monProfil{
+        left: 0;
+        right: 0;
+        top: 110px;
     }
 }

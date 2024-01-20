@@ -31,7 +31,7 @@
                 </li>
             </ul>
         </nav>
-        <a href="profil.html" class="user flex items-center p-2">
+        <a href="profil.html" class="user text-dark flex items-center p-2">
             <span class="font-semibold">Jeffren Mokamo</span>
             <img class="rounded-full" src="images/home.png" alt="image_user" />
         </a>
@@ -67,7 +67,25 @@
                 </div>
             </div>
 
-            <button class="w-100 font-semibold text-white rounded">Modifier mes informations</button>
+            <button class="w-100 font-semibold text-white mb-5 rounded">Modifier mes informations</button>
+
+           <div class="modInfos">
+
+                <h2 class="font-bold text-3xl mb-5">Modifier mes informations</h2>
+
+                <form action="" method="">
+                    <div class="photoProfil mb-4 text-center">
+                        <img src="images/home.png" alt="" class="w-100">
+                        <input type="file" accept="image/*" id="upload-img">
+                        <label for="upload-img" role="button" class="btn btn-success">Choisir une photo</label>
+                    </div>
+
+                    <input type="text" value="Jeffren Mokamo" placeholder="Nom d'utilisateur" class="form-control mb-3" required>
+                    <input type="tel" value="+243 82 80 33 897" placeholder="Numéro téléphone" class="form-control mb-3" required>
+
+                    <button type="submit" class="w-100 text-white font-semibold rounded">Enregistrer les modifications</button>
+                </form>
+           </div>
 
         </div>
 
