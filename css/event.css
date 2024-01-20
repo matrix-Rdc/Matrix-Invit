@@ -419,6 +419,28 @@ body{
 
 /* Fin */
 
+/* Mes Evenements */
+
+.mesEvents{
+    top: 70px;
+    left: 30%;
+    right: 30%;
+}
+
+.mesEvents div button{
+    width: 50%;
+    height: 40px;
+}
+
+.mesEvents div .ajouter{
+    border: 1px solid grey;
+}
+
+.mesEvents div .mod{
+    background-color: #FA6E61;
+}
+
+/* Fin */
 
 /* Media Screen */
 
@@ -520,7 +542,12 @@ body{
     .monProfil{
         left: 0;
         right: 0;
-        top: 130px;
+        top: 131px;
+    }
+    .mesEvents{
+        left: 0;
+        right: 0;
+        top: 131px;
     }
 }
 
@@ -554,7 +581,12 @@ body{
     .monProfil{
         left: 0;
         right: 0;
-        top: 120px;
+        top: 121px;
+    }
+    .mesEvents{
+        left: 0;
+        right: 0;
+        top: 121px;
     }
 }
 
@@ -588,6 +620,11 @@ body{
     .monProfil{
         left: 0;
         right: 0;
-        top: 110px;
+        top: 111px;
+    }
+    .mesEvents{
+        left: 0;
+        right: 0;
+        top: 111px;
     }
 }
