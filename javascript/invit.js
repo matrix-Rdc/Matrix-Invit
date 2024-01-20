@@ -13,6 +13,9 @@ const place = document.querySelector('.place');
 const interesse = document.querySelector('.interesse');
 let ctrLike = document.querySelector('.ctr');
 
+let posModInfo; 
+const modInfo = document.querySelector('.modInfos');
+
 function userInteresse(){
 
     interesse.addEventListener('click', () =>{
@@ -120,3 +123,15 @@ function changeView(){
 
 }
 
+function modInfos(){
+
+    modInfo.style.display = 'block';
+    posModInfo = modInfo.offsetTop;
+        
+        window.scroll({
+            top:posModInfo,
+            left: 0,
+            behavior: "smooth"
+    })
+
+}

@@ -412,6 +412,11 @@ body{
     height: 45px;
 }
 
+.monProfil .modInfos{
+    display: block;
+    display: none;
+}
+
 /* Fin */
 
 
