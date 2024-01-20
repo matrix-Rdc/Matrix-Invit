@@ -11,10 +11,37 @@
 </head>
 <body>
 
-    <div class="monProfil bg-white flex-col">
-        <img src="images/images (2).jpg" alt="" class="w-100 h-90 mb-3">
+    <div class="menu flex items-center justify-between bg-white fixed">
+        <a href="tableau.html" class="p-2">
+            <h2 class="text-2xl font-bold">Matrix Invit</h2>
+        </a>
+        <nav class="flex items-center justify-center">
+            <ul class="navbar">
+                <li class="nav-item p-2">
+                    <a href="tableau.html" class="nav-link active text-center"><i class="bi bi-house-door-fill"></i><span>Accueil</span></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="mesevenements.html" class="nav-link text-center"><i class="bi bi-calendar2-event"></i> <span>Mes évènements</span></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="javascript:void(0)" class="nav-link text-center"><i class="bi bi-envelope"></i><span> Invitations</span></a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="javascript:void(0)" class="nav-link text-center"><i class="bi bi-gear"></i> <span>Paramètres</span></a>
+                </li>
+            </ul>
+        </nav>
+        <a href="profil.html" class="user flex items-center p-2">
+            <span class="font-semibold">Jeffren Mokamo</span>
+            <img class="rounded-full" src="images/home.png" alt="image_user" />
+        </a>
+    </div>
 
-        <div class="information p-3 w-100 mb-3">
+    <div class="monProfil absolute bg-white flex-col p-3">
+        <h2 class="text-3xl font-bold mb-4">Mon profil</h2>
+        <img src="images/images (2).jpg" alt="" class="w-100 h-90 mb-3 rounded">
+
+        <div class="information w-100 mb-3">
             <p class="font-bold md:text-2xl">Jeffren Mokamo</p>
             <p class="font-semibold mb-4">+243 82 80 33 897</p>
 

@@ -249,7 +249,7 @@ body{
 #btnCreatEvent{
     bottom: 20px;
     right: 20px;
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     border-radius: 50%;
     padding: 5px;
     z-index: 100;
@@ -395,6 +395,26 @@ body{
     height: 45px;
 }
 
+/* Mon Profil*/
+
+.monProfil{
+    top: 70px;
+    left: 30%;
+    right: 30%;
+}
+
+.monProfil .prefer{
+    background-color: rgba(217, 217, 217, .8);
+}
+
+.monProfil button{
+    background-color: #FA6E61;
+    height: 45px;
+}
+
+/* Fin */
+
+
 /* Media Screen */
 
 @media (max-width: 1000px){
@@ -491,6 +511,11 @@ body{
         border-radius: none;
         z-index: 100;
         bottom: 0;
+    }
+    .monProfil{
+        left: 0;
+        right: 0;
+        top: 130px;
     }
 }
 
