@@ -456,7 +456,7 @@ body{
 .overMod{
     display: block;
     backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .4);
     inset: 0;
     z-index: 50;
     display: none;
@@ -465,12 +465,11 @@ body{
 .modEvents{
     z-index: 50;
     background-color: #fff;
-    margin-left: 25%;
     padding: 60px 10px 20px 10px;
-    margin-top: 40px;
+    margin: 40px 25%;
     display: block;
-    margin-right: 25%;
     background-color: #fff;
+    overflow-x: hidden;
     display: none;
 }
 
@@ -580,6 +579,10 @@ body{
         left: 0;
         right: 0;
         top: 131px;
+    }
+    .modEvents{
+        margin:0;
+        padding: 60px 10px 10px 10px;
     }
 }
 
