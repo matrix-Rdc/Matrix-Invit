@@ -402,7 +402,7 @@ body{
 /* Mon Profil*/
 
 .monProfil{
-    top: 70px;
+    top: 71px;
     left: 30%;
     right: 30%;
 }
@@ -426,7 +426,7 @@ body{
 /* Mes Evenements */
 
 .mesEvents{
-    top: 70px;
+    top: 71px;
     left: 30%;
     right: 30%;
 }
@@ -471,6 +471,19 @@ body{
     background-color: #fff;
     overflow-x: hidden;
     display: none;
+}
+
+/* Mes invitations */
+
+.notifications{
+    background-color: #fff;
+    top: 71px;
+    left: 35%;
+    right: 35%;
+}
+
+.notifications .notification{
+    background-color: rgba(217, 217, 217, .2);
 }
 
 /* Media Screen */
@@ -584,6 +597,11 @@ body{
         margin:0;
         padding: 60px 10px 10px 10px;
     }
+    .notifications{
+        top: 131px;
+        left: 0;
+        right: 0;
+    }
 }
 
 @media (max-width: 375px){
@@ -614,13 +632,12 @@ body{
         width: 90%;
     }
     .monProfil{
-        left: 0;
-        right: 0;
         top: 121px;
     }
     .mesEvents{
-        left: 0;
-        right: 0;
+        top: 121px;
+    }
+    .notifications{
         top: 121px;
     }
 }
@@ -653,13 +670,12 @@ body{
         width: 90%;
     }
     .monProfil{
-        left: 0;
-        right: 0;
         top: 111px;
     }
     .mesEvents{
-        left: 0;
-        right: 0;
+        top: 111px;
+    }
+    .notifications{
         top: 111px;
     }
 }
