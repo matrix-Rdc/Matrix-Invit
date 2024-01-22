@@ -63,21 +63,48 @@
 
     </div>
 
-    <div class="modEvents rounded bg-white relative">
+    <div class="overMod fixed"></div>
 
-        <div class="overMod fixed"></div>
+    <div class="modEvents mb-4 rounded bg-white relative">
 
         <i class="bi bi-x mb-4 text-5xl cursor-pointer absolute"></i>
 
-            <h1 class="text-3xl font-bold">Modifier l'évènement</h1>
+            <h1 class="text-3xl font-bold mb-2">Modifier l'évènement</h1>
             
-            <div class="photoEvent">
+            <div class="photoEvent mb-4">
                 <img src="images/prieres.jpg" alt="" class="w-100 rounded mb-1">
                 <input type="file" accept="image/*" id="upload-img">
                 <label for="upload-img" role="button" class="btn btn-success w-100">Choisir une photo</label>
             </div>
 
-            
+            <input type="text" name="titre" placeholder="Titre de l'évènement" class="form-control mb-3" value="Retraite de prière" required>
+            <select name="type" id="type" class="mb-3 form-control">
+                <option value="">Type</option>
+            </select>
+
+            <div class="">
+                <h2 class="text-2xl font-bold">Heure & Date</h2>
+
+                <div class="row p-3 gap-2 mb-4">
+
+                    <input type="date" name="titre" class="form-control col" required>
+                    <input type="time" name="titre" class="form-control col" required>
+
+                </div>
+            </div>
+
+            <select name="type" id="type" class="mb-3 form-control">
+                <option value="">En ligne</option>
+                <option value="">En presentiel</option>
+            </select>
+            <input type="text" name="adr" placeholder="Adresse" class="form-control mb-5" value="" required>
+
+            <div class="row gap-2 p-3">
+
+                <button class="col btn btn-danger">Annuler</button>
+                <button class="col btn btn-success">Enregistrer</button>
+
+            </div>
 
     </div>
 
