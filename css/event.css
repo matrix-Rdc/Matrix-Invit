@@ -199,7 +199,7 @@ body{
     font-size: 13px;
     font-weight: 500;
 }
-.container .form-ins form #upload-img, .monProfil #upload-img{
+#upload-img{
     display: none;
 }
 
@@ -441,6 +441,24 @@ body{
 }
 
 /* Fin */
+
+/* Modifiers Events */
+
+.modEvents .bi-x{
+    right: 5px;
+    top: 5px;
+}
+
+.modEvents{
+    z-index: 50;
+    background-color: #fff;
+    margin-left: 25%;
+    padding: 50px 10px 10px 10px;
+    margin-top: 40px;
+    display: block;
+    margin-right: 25%;
+    background-color: #fff;
+}
 
 /* Media Screen */
 

@@ -129,7 +129,7 @@ function modInfos(){
     posModInfo = modInfo.offsetTop;
         
         window.scroll({
-            top:posModInfo - 20,
+            top:posModInfo - 10,
             left: 0,
             behavior: "smooth"
     })
