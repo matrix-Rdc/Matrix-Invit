@@ -144,3 +144,26 @@ function modifEvent(){
     modEvent.classList.toggle('visible')
     overMod.classList.toggle('visible')
 }
+
+const themes = document.querySelectorAll('.theme');
+
+themes.forEach(theme =>{
+
+    theme.addEventListener('click', function(){
+
+        if(this.classList.contains('activeTheme') && this.classList.contains('sombre')){
+            document.body.style.backgroundColor = 'black';
+        }
+        else if(this.classList.contains('activeTheme')){
+            return
+        }
+        else{
+            themes.forEach(theme =>{
+                theme.classList.remove('activeTheme')
+            })
+
+            this.classList.add('activeTheme')
+        }
+
+    })
+})

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(217, 217, 217, .4)!important;
+    background-color: rgba(217, 217, 217, .2)!important;
 }
 
 .visible{
@@ -495,6 +495,11 @@ body{
     right: 35%;
 }
 
+.parametres .theme.activeTheme{
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
 /* Media Screen */
 
 @media (max-width: 1000px){
@@ -611,6 +616,11 @@ body{
         left: 0;
         right: 0;
     }
+    .parametres{
+        top: 131px;
+        left: 0;
+        right: 0;
+    }
 }
 
 @media (max-width: 375px){
@@ -649,6 +659,9 @@ body{
     .notifications{
         top: 121px;
     }
+    .parametres{
+        top: 121px;
+    }
 }
 
 @media (max-width: 300px){
@@ -685,6 +698,9 @@ body{
         top: 111px;
     }
     .notifications{
+        top: 111px;
+    }
+    .parametres{
         top: 111px;
     }
 }
