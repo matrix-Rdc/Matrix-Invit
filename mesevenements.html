@@ -56,18 +56,18 @@
         </div>
         <div class="flex gap-2 items-center justify-between mb-4 w-full">
             <button class="ajouter rounded font-semibold"><span><i class="bi bi-send"></i></span> Envoyer Invitation</button>
-            <button class="mod rounded text-white font-semibold"><span><i class="bi bi-pencil-fill"></i></span> Modifiert</button>
+            <button onclick="modifEvent()" class="mod rounded text-white font-semibold"><span><i class="bi bi-pencil-fill"></i></span> Modifier</button>
         </div>
 
-        <a href="event.html"><button class="newEvent font-semibold flex mb-2 items-center"><span><i class="bi bi-plus text-3xl"></i></span>Nouvel Evènement</button></a>
+        <a href="event.html"><button class="newEvent text-dark font-semibold flex mb-2 items-center"><span><i class="bi bi-plus text-3xl"></i></span>Nouvel Evènement</button></a>
 
     </div>
 
-    <div class="overMod fixed"></div>
+    <div onclick="modifEvent()" class="overMod fixed"></div>
 
     <div class="modEvents mb-4 rounded bg-white relative">
 
-        <i class="bi bi-x mb-4 text-5xl cursor-pointer absolute"></i>
+        <i onclick="modifEvent()" class="bi bi-x mb-4 text-5xl cursor-pointer absolute"></i>
 
             <h1 class="text-3xl font-bold mb-2">Modifier l'évènement</h1>
             

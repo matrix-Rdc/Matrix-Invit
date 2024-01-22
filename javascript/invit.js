@@ -135,3 +135,12 @@ function modInfos(){
     })
 
 }
+
+const modEvent = document.querySelector('.modEvents')
+const overMod = document.querySelector('.overMod')
+
+function modifEvent(){
+
+    modEvent.classList.toggle('visible')
+    overMod.classList.toggle('visible')
+}

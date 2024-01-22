@@ -8,6 +8,10 @@ body{
     background-color: rgba(217, 217, 217, .4)!important;
 }
 
+.visible{
+    display: block!important;
+}
+
 .inter{
     color: #fff;
     background-color: #FA6E61;
@@ -450,10 +454,12 @@ body{
 }
 
 .overMod{
+    display: block;
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, .6);
     inset: 0;
     z-index: 50;
+    display: none;
 }
 
 .modEvents{
