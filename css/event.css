@@ -425,6 +425,15 @@ body{
     display: none;
 }
 
+.monProfil .theme.activeTheme{
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.monProfil .theme button{
+    background-color: transparent;
+}
+
 /* Fin */
 
 /* Mes Evenements */
@@ -488,20 +497,6 @@ body{
 
 .notifications .notification{
     background-color: rgba(217, 217, 217, .2);
-}
-
-/* paramètres */
-
-.parametres{
-    background-color: #fff;
-    top: 71px;
-    left: 35%;
-    right: 35%;
-}
-
-.parametres .theme.activeTheme{
-    border: 1px solid grey;
-    border-radius: 5px;
 }
 
 /* Media Screen */
