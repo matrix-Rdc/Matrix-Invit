@@ -457,6 +457,14 @@ body{
     background-color: #FA6E61;
 }
 
+.mesEvents .voir{
+    width: 100%;
+}
+
+.mesEvents .voir a{
+    width: 100%;
+}
+
 /* Fin */
 
 /* Modifiers Events */
