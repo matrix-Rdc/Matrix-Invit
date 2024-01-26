@@ -631,10 +631,10 @@ body{
         left: 0;
         right: 0;
     }
-    .parametres{
-        top: 131px;
+    .eventsPasses{
         left: 0;
         right: 0;
+        top: 131px;
     }
 }
 
@@ -674,7 +674,7 @@ body{
     .notifications{
         top: 121px;
     }
-    .parametres{
+    .eventsPasses{
         top: 121px;
     }
 }
@@ -715,7 +715,7 @@ body{
     .notifications{
         top: 111px;
     }
-    .parametres{
+    .eventsPasses{
         top: 111px;
     }
 }
