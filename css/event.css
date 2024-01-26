@@ -387,8 +387,7 @@ body{
 
 #btnEnreg, #btnSuivant{
     color: #fff;
-    /* background-color: dodgerblue; */
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
 }
 
 #btnSuivant{
@@ -530,6 +529,24 @@ body{
     width: 50%;
 }
 
+/* Participer */
+
+.participer{
+    display: block;
+    z-index: 100;
+    border-radius: 10px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.participer button{
+    background-color: #FA6E61;
+    width: 50%;
+}
+
 /* Media Screen */
 
 @media (max-width: 1000px){
@@ -655,6 +672,13 @@ body{
         left: 0;
         right: 0;
         top: 131px;
+    }
+    .participer{
+        border-radius: 10px;
+        left: 1%;
+        right: 1%;
+        top: 30%;
+        transform: initial;
     }
 }
 

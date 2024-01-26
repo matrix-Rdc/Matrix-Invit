@@ -164,3 +164,10 @@ themes.forEach(theme =>{
 
     })
 })
+
+function participeEvent(){
+
+    document.querySelector('.participer').classList.toggle('visible')
+    overMod.classList.toggle('visible')
+
+}
