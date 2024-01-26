@@ -457,14 +457,6 @@ body{
     background-color: #FA6E61;
 }
 
-.mesEvents .voir{
-    width: 100%;
-}
-
-.mesEvents .voir a{
-    width: 100%;
-}
-
 /* Fin */
 
 /* Modifiers Events */
@@ -499,12 +491,22 @@ body{
 .notifications{
     background-color: #fff;
     top: 71px;
-    left: 35%;
-    right: 35%;
+    left: 30%;
+    right: 30%;
 }
 
 .notifications .notification{
     background-color: rgba(217, 217, 217, .2);
+}
+
+/* Mes evenements passés */
+
+.eventsPasses{
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 71px;
+    background-color: #fff;
 }
 
 /* Media Screen */
