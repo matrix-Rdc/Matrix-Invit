@@ -515,6 +515,21 @@ body{
     border-radius: 50%;
 }
 
+/* Evenments auxquels j'ai participé */
+
+.eventsParticipes{
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 71px;
+    background-color: #fff;
+}
+
+.eventsParticipes .commenter button{
+    background-color: #FA6E61;
+    width: 50%;
+}
+
 /* Media Screen */
 
 @media (max-width: 1000px){
@@ -636,6 +651,11 @@ body{
         right: 0;
         top: 131px;
     }
+    .eventsParticipes{
+        left: 0;
+        right: 0;
+        top: 131px;
+    }
 }
 
 @media (max-width: 375px){
@@ -677,6 +697,9 @@ body{
     .eventsPasses{
         top: 121px;
     }
+    .eventsParticipes{
+        top: 121px;
+    }
 }
 
 @media (max-width: 300px){
@@ -716,6 +739,9 @@ body{
         top: 111px;
     }
     .eventsPasses{
+        top: 111px;
+    }
+    .eventsParticipes{
         top: 111px;
     }
 }
