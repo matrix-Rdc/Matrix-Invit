@@ -509,6 +509,12 @@ body{
     background-color: #fff;
 }
 
+.eventsPasses .comment img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
 /* Media Screen */
 
 @media (max-width: 1000px){
