@@ -151,10 +151,7 @@ themes.forEach(theme =>{
 
     theme.addEventListener('click', function(){
 
-        if(this.classList.contains('activeTheme') && this.classList.contains('sombre')){
-            document.body.style.backgroundColor = 'black';
-        }
-        else if(this.classList.contains('activeTheme')){
+        if(this.classList.contains('activeTheme')){
             return
         }
         else{

@@ -12,6 +12,10 @@ body{
     display: block!important;
 }
 
+.mds{
+    background-color: #000!important;
+}
+
 .inter{
     color: #fff;
     background-color: #FA6E61;
