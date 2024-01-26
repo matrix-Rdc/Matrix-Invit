@@ -20,7 +20,7 @@
                 <img class="mb-2" src="images/users.png" alt="logo/invit" id="img-change"><br>
 
                 <input type="file" id="upload-img" accept="image/*">
-                <label for="upload-img" class="mb-5 rounded">Choisir une photo <i class="bi bi-camera-fill"></i></label>
+                <label for="upload-img" class="mb-4 rounded cursor-pointer">Choisir une photo <i class="bi bi-camera-fill"></i></label>
 
                 <div class="champs mb-3 d-flex align-items-center justify-content-center">
                     <span><i class="bi bi-person"></i></span>
@@ -30,9 +30,13 @@
                     <span>+243</span>
                     <input type="tel" placeholder="téléphone" name="téléphone" required>
                 </div>
-                <div class="champs mb-4 d-flex align-items-center justify-content-center">
+                <div class="champs mb-3 d-flex align-items-center justify-content-center">
                     <span><i id="oeil" onclick="changeView()" class="bi bi-eye-slash-fill"></i></span>
                     <input type="password" placeholder="mot de passe" name="pass" class="inputPass" required>
+                </div>
+                <div class="champs mb-4 d-flex align-items-center justify-content-center">
+                    <span><i id="oeil" onclick="changeView()" class="bi bi-eye-slash-fill"></i></span>
+                    <input type="password" placeholder="confirmer le mot de passe" name="pass" class="inputPass" required>
                 </div>
 
                 <button type="submit" class="font-semibold col-md-12 mb-2">

@@ -139,7 +139,7 @@ body{
     width: 150px;
     height: 45px;
     border-radius: 50px;
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     color: #fff;
     font-weight: 600;
     border: none;
@@ -152,7 +152,7 @@ body{
 .container .form-conn form button, .container .form-ins form button {
     height: 45px;
     border-radius: 50px;
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     font-weight: 700;
     color: #fff;
     width: 100%;
@@ -184,8 +184,8 @@ body{
 }
 
 .container .form-conn form img{
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 /* inscription */
@@ -201,7 +201,7 @@ body{
 }
 
 .container .form-ins form label{
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     color: #fff;
     padding: 8px;
     font-size: 13px;
@@ -239,7 +239,7 @@ body{
 }
 
 .btnPref{
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     border: none;
     border-radius: 50px;
     width: 50%;
@@ -381,7 +381,7 @@ body{
     color: #FA6E61;
 }
 .container .form-event form .ajouter, .container .form-invites form .ajouter{
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
     color: #fff;
 }
 
@@ -394,7 +394,7 @@ body{
     height: 45px;
     border-radius: 50px;
     width: 100%;
-    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    background-color: #FA6E61;
 }
 
 #sans{
@@ -573,7 +573,7 @@ body{
         padding: 40px 20px!important;
     }
     .btnPref{
-        background: linear-gradient(to left top,#FA6E61, #FDD832);
+        background-color: #FA6E61;
         border: none;
         border-radius: 50px;
         width: 100%!important;
