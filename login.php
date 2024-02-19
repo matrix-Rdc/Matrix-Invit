@@ -10,10 +10,45 @@
     <title>Invit-connexion</title>
 </head>
 <body>
-    
     <div class="container d-flex align-items-center justify-content-center w-100">
         <div class="form-conn">
-            <form class="rounded" action="preference.html" method="GET">
+            <div class="login-form">
+             <?php 
+                if(isset($_GET['login_err']))
+                {
+                    $err = htmlspecialchars($_GET['login_err']);
+
+                    switch($err)
+                    {
+                        case 'password':
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> mot de passe incorrect
+                            </div>
+                        <?php
+                        break;
+
+                        case 'email':
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> email incorrect
+                            </div>
+                        <?php
+                        break;
+
+                        case 'already':
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> compte non existant
+                            </div>
+                        <?php
+                        break;
+                    }
+                }
+                ?> 
+            <?php // Nous soumetons les informations à la page Connexion.php
+             ?>
+            <form class="rounded" action="connexion.php" method="post">
 
                 <img src="images/logo.PNG" alt="logo/invit">
 
@@ -22,11 +57,11 @@
 
                 <div class="text-center d-flex align-items-center justify-content-center champs mb-4">
                     <span>+243</span>
-                    <input type="tel" placeholder="téléphone" name="tel" required>
+                    <input type="tel" placeholder="Téléphone" name="telephone" required>
                 </div>
                 <div class="text-center d-flex align-items-center justify-content-center champs mb-4">
                     <span><i id="oeil" onclick="changeView()" class="bi bi-eye-slash-fill"></i></span>
-                    <input type="password" placeholder="mot de passe" name="pass" class="inputPass" required>
+                    <input type="password" placeholder="Mot de passe" name="password" class="inputPass" required>
                 </div>
 
                 <p class="mb-3"><a href="#" style="color: #FA6E61;" >Mot de passe oublié ?</a></p>
@@ -34,11 +69,10 @@
                 <button type="submit" class="col-md-12 mb-2">
                     Se connecter
                 </button>
-                <p>Vous n'avez pas de compte ? <a href="inscription.html" style="color: #FA6E61;">créer un compte</a></p>
+                <p>Vous n'avez pas de compte ? <a href="inscription.php" style="color: #FA6E61;">créer un compte</a></p>
             </form>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="javascript/invit.js"></script>
 </body>

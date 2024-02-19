@@ -40,6 +40,16 @@ setTimeout(() => {
 
 }, 5000);
 
+for(let i = 0; i < prefers.length; i++){
+
+    prefers[i].onclick = () => {
+
+        prefers[i].classList.toggle('pref-choisi');
+
+    }
+
+}
+
 function dispNone(){
     document.querySelector('.nomPlaces').style.display = 'none';
 }
@@ -101,7 +111,7 @@ function changeMsg(){
 
     }
     if(ctr > 2){
-        document.querySelector('.link-conn').setAttribute("href", "login.html");
+        document.querySelector('.link-conn').setAttribute("href", "login.php");
     }
 
 }

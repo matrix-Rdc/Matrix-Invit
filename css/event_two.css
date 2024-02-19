@@ -1,0 +1,224 @@
+*{
+    list-style: none;
+    text-decoration: none!important;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(217, 217, 217, .5)!important;
+}
+
+.mds{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.mds a{
+    color: gray;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.mds h6{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.mds .btn-mds #div-toggle{
+    height: 15px;
+    width: 50px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: rgba(217, 217, 217, 1);
+    cursor: pointer;
+}
+
+.mds .btn-mds #div-toggle #toggle{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.msg-accueil{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../images/img-acc.jpg');
+    background-position: center;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+}
+
+.msg-accueil div{
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    border-radius: 35px 35px 0 0;
+    background-color: #fff;
+}
+
+.preload{
+    min-height: 100vh;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #fff;
+}
+
+.preload img{
+    width: 13em;
+    height: 13em;
+}
+
+@media (max-width: 950px){
+
+    .msg-accueil img{
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .msg-accueil span{
+        font-size: 16px!important;
+    }
+
+    .preferences .choix-pref .pref{
+        padding: 5px 10px!important;
+        font-size: 15px!important;
+        font-weight: initial!important;
+    }
+    .container form{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btn-next{
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+/* La classe qui permet au bouton mds de transité */
+.translate{
+    transform: translate(35px);
+}
+
+/* La classe qui permet au bouton mds de changé la couleur de fond */
+.bg-sky{
+    background-color: skyblue!important;
+}
+
+/* Fin page accueil ! Début page connexion et inscription */
+
+.container .form-conn form button, .container .form-ins form button {
+    height: 45px;
+    border-radius: 50px;
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    border: none;
+}
+
+.container .form-conn form input, .container .form-ins form input{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+/* Connexion */
+
+.container{
+    min-height: 100vh;
+}
+.container form{
+    padding: 40px;
+    background-color: #fff;
+}
+
+.container .form-conn form img{
+    width: 12rem;
+    height: 12rem;
+}
+
+/* inscription */
+
+.container .form-ins form{
+    border-radius: 10px;
+    padding: 30px;   
+}
+
+.container .form-ins form img{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+}
+
+.container .form-ins form label{
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+}
+.container .form-ins form #upload-img{
+    display: none;
+}
+
+/*  Préférences */
+
+.preferences{
+    width: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.preferences .choix-pref{
+    padding: 20px;
+}
+
+.preferences .choix-pref .pref{
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+
+.pref-choisi{
+    border: 1px solid #ffa908!important;
+    color: #fff!important;
+    background-color: #ffa908!important;
+}
+
+.btnPref{
+    background: linear-gradient(to left top,#FA6E61, #FDD832);
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    height: 45px;
+}
+
+.btnPref a{
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+}
